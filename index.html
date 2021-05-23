@@ -19,19 +19,32 @@
     </head>
     <body>
         <div class="container">
-            <nav class="navbar navbar-expand-md" role="navigation" aria-label="main navigation">
+            <nav class="navbar" role="navigation" aria-label="main navigation">
                 <a class="navbar-brand" href="#">
                     <img src="logo.png" height="100" alt="logo">
                 </a>
                 <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent20"
-                aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation">
+                    aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation">
                     <div class="animated-icon1"><span></span><span></span><span></span></div>
                 </button>
-                <div class="collapse navbar-collapse navbar-menu" id="navbarSupportedContent">
-                    <div>
-                        <a class="nav-link contact-button" href="contact.html">Say Hello</a>
-                    </div>
-                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent20">
+                    <ul id="nav-bar" class="navbar-nav mr-auto">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="#intro">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Skills</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Projects</a>
+                      </li>
+                      <li>
+                          <a class="nav-link" href="#">
+                            <i class="fab fa-github fa-2x"></i>
+                          </a>
+                      </li>
+                    </ul>                
+                  </div>
             </nav>
             <section class="text-center">  
                 <div>
@@ -43,14 +56,17 @@
                     </h2>
                 </div>
                 <div class="workspace">
-                    <img src="workspace1.png">
+                    <img class="img-fluid" src="workspace1.png">
                 </div>
             </section>
         </div>
-        <div class="primary-background">
+        <section class="primary-background intro-section">
             <div class="container">
                 <div class="intro-container">
-                    <h1 class="title text-center intro">
+                    <div class="arrow bounce">
+                        <a class="fas fa-angle-down fa-5x arrow-down" href="#"></a>
+                    </div>
+                    <h1 id="intro" class="title text-center intro">
                         Hi, I'm Tom. It's Nice to meet you.
                     </h1>
                     <h2 class="sub-intro text-center">
@@ -60,6 +76,109 @@
                     </h2>
                 </div>
             </div>
-        </div>
+        </section>
+        <section class="skills-section">
+            <div class="container">
+                <div class="skills">
+                    <div class="skills-box">
+                        <i class=" skills-icon fas fa-certificate fa-2x"></i>
+                        <h3 class="title">
+                            Profile
+                        </h3>
+                        <p>
+                            I am a reliable, conscientious and hardworking individual, who is equally confident working as part of a team and on my own initiative. 
+                            I feel that I would bring enthusiasm and commitment to any job that arises.
+                        </p>
+                        <hr>
+                        <h4 class="title skills-icon">
+                            Core Skills
+                        </h4>
+                        <ul class="skills-list">
+                            <li>
+                                People Management
+                            </li>
+                            <li>
+                                Analytical Thinking
+                            </li>
+                            <li>
+                                Problem Solving
+                            </li>
+                            <li>
+                                Decision Making
+                            </li>
+                            <li>
+                                Time Management
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="skills-box">
+                        <i class="skills-icon fas fa-code fa-2x"></i>
+                        <h3 class="title">
+                            Front-End
+                        </h3>
+                        <p>
+                            What started out as something to learn during lockdown, turned out to be something I really enjoy and would like to take much further. 
+                            I enjoy building things from scratch and learning as I go. I like tackling a problem head on and working towards a solution.
+                        </p>
+                        <hr>
+                        <h4 class="skills-icon">
+                            Languages
+                        </h4>
+                        <ul class="skills-list">
+                            <li>
+                                HTML
+                                <i class="fab fa-html5"></i>
+                            </li>
+                            <li>
+                                CSS
+                                <i class="fab fa-css3-alt"></i>
+                            </li>
+                            <li>
+                                Javascript
+                                <i class="fab fa-js"></i>
+                            </li>
+                            <li>
+                                PHP
+                                <i class="fab fa-php"></i>
+                            </li>
+                            <li>
+                                Python
+                                <i class="fab fa-python"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="skills-box">
+                        <i class="skills-icon fas fa-desktop fa-2x"></i>
+                        <h3 class="title">
+                            Dev-Tools
+                        </h3>
+                        <p class="temp">
+                            I look forward to adding more tools to my belt. I hope to greatly expand my knowlege and improve efficency with the use of the many tools avaliable.
+                        </p>
+                        <hr>
+                        <h4 class="skills-icon">
+                            Tools Used
+                        </h4>
+                        <ul class="skills-list">
+                            <li>
+                                Visual Studio Code
+                            </li>
+                            <li>
+                                Github Desktop
+                            </li>
+                            <li>
+                                Codepen
+                            </li>
+                            <li>
+                                Boostrap
+                            </li>
+                            <li>
+                                JQuery
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
     </body>
 </html>
