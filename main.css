@@ -285,3 +285,10 @@ a:hover{
 .link--anim:hover span {
     transform: translate3d(0, -2px, 0);
 }
+
+.rotate:hover
+{
+        -webkit-transform: rotateZ(-30deg);
+        -ms-transform: rotateZ(-30deg);
+        transform: rotateZ(-30deg);
+}
