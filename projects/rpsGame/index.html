@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" conent="Thomas Nikoloff">
+    <title>Rock, Paper & Scissors</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/main.css">
+</head>
+<body>
+    <div class="container mt-2">
+        <div>
+            <a href="https://tomnikoloff.github.io./">
+                <img class="rotate mt-5 ml-5" height="100" src="static/images/logo.png">
+            </a>
+        </div>
+        <h1 class="text-center pb-5 primary-text">Rock, Paper, Scissors</h1>
+        <h2 id="roundCounter" class="text-center p-3">Round 1</h2>
+        <div class="row" id="rpsMainDiv">
+            <div class="col text-center">
+                <div>
+                    <h5>Wins</h5>
+                </div>
+                <div>
+                    <h3 id="humanWinCounter" class="secondary-text">0</h3> 
+                </div>
+                <div id="humanDiv" class="rpsImgDiv">
+                    <img id="rock" class="rpsImg" src="static/images/rock.jpg" onclick="rpsGame(this)">
+                </div>
+            </div>
+            <div class="col text-center">
+                <div>
+                    <h5>Draw</h5>
+                </div>
+                <div>
+                    <h3 id="drawCounter" class="secondary-text">0</h3> 
+                </div>
+                <div id="messageDiv" class="rpsImgDiv">
+                    <img id="paper" class="rpsImg" src="static/images/paper.jpg" onclick="rpsGame(this)">
+                </div>
+                <div id="resetButtonDiv">
+                    <button id="resetButton" class="btn btn-secondary resetButton" onclick="resetGame()">Play Again</button>
+                </div>
+            </div>
+            <div class="col text-center">
+                <div>
+                    <h5>Bot Wins</h5>
+                </div>
+                <div>
+                    <h3 id="botWinCounter" class="secondary-text">0</h3> 
+                </div>
+                <div id="botDiv" class="rpsImgDiv">
+                    <img id="scissors" class="rpsImg" src="static/images/scissors.jpg" onclick="rpsGame(this)">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="static/js/script.js"></script>
+</body>
+</html>
