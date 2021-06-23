@@ -96,6 +96,23 @@ body {
     box-shadow: none;
 }
 
+.vertical-text {
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+}
+
+.vertical-text-style {
+    font-size: 1rem;
+    color: #252934;
+    display: inline;
+}
+
+.verticalContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .title {
     font-weight: bold;
     line-height: 1.125;
@@ -142,7 +159,6 @@ a:hover{
 }
 
 .arrow-down{
-    color: #8c52ff;
     text-decoration: none;
 }
 
@@ -175,7 +191,6 @@ a:hover{
 
 .intro {
     padding-top: 4rem;
-    color: #8c52ff;
     font-size:  1.9rem;
 }
 
@@ -213,10 +228,6 @@ a:hover{
 
 .skills-list{
     list-style-type: none;
-}
-
-.skills-icon{
-    color: #8c52ff;
 }
 
 .temp{
@@ -333,10 +344,6 @@ a:hover{
     color: #fff;
 }
 
-.contact-title {
-    color: #8c52ff;
-}
-
 .submit {
     background-color: #252934;
 }
@@ -365,4 +372,28 @@ a:hover{
     .contact-form {
         padding: 0 250px;
     }
+}
+
+.textColor_Change {
+    color: #8c52ff;
+}
+
+.borderColor_Change {
+    border-top: 5px #8c52ff solid;
+}
+
+.default_Color {
+    color: #8c52ff;
+}
+
+.blue_Color {
+    color: blue;
+}
+
+.red_Color {
+    color: red;
+}
+
+.blue_Color {
+    color: green;
 }
