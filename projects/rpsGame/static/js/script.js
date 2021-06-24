@@ -40,7 +40,7 @@ function decideWinner(yourChoice, computerChoice) {
     return [yourScore, computerScore];
 }
 
-//Score is returned as [1, 0] or [0.5, 0.5] etc
+//Score is returned as [1, 0] , [0.5, 0.5] or [0, 1] etc
 
 function finalMessage([yourScore, computerScore]) {
     if (yourScore === 0) {

@@ -21,7 +21,7 @@
         <div class="container">
             <nav class="navbar" role="navigation" aria-label="main navigation">
                 <a class="navbar-brand" href="#">
-                    <img class="rotate" src="images/logo.png" height="100" alt="logo">
+                    <img id="logo_Img" class="rotate" src="images/designs/logo.png" height="100" alt="logo">
                 </a>
                 <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent20"
                     aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,11 +59,30 @@
             </nav>
             <div class="verticalContainer vertical-text">
                 <p class="vertical-text-style">Dont like the colour scheme? Try these instead:</p>
+                <div class="vertical_flex">
+                    <button class="vertical_button btn btn-secondary" onclick="changeToBlue()">
+                        Blue
+                    </button>
+                    <button class="vertical_button btn btn-secondary" onclick="changeToRed()">
+                        Red
+                    </button>
+                    <button class="vertical_button btn btn-secondary" onclick="changeToGreen()">
+                        Green
+                    </button>
+                    <button class="vertical_button btn btn-secondary" onclick="changeToYellow()">
+                        Yellow
+                    </button>
+                    <button class="vertical_button btn btn-secondary" onclick="changeToDefault()">
+                        Reset
+                    </button>
+                </div>
+                <!--
                 <p class="vertical-text-style" onclick="changeToBlue()">Blue</p>
                 <p class="vertical-text-style" onclick="changeToRed()">Red</p>
                 <p class="vertical-text-style" onclick="changeToGreen()">Green</p>
-                <p class="vertical-text-style" onclick="randomColors()">Random</p>
+                <p class="vertical-text-style" onclick="changeToYellow()">Yellow</p>
                 <p class="vertical-text-style" onclick="changeToDefault()">Reset</p>
+                -->
             </div>
             <section class="text-center">  
                 <div>
@@ -75,11 +94,11 @@
                     </h2>
                 </div>
                 <div class="workspace">
-                    <img class="img-fluid" src="images/workspace1.png">
+                    <img id="workspace_Img" class="img-fluid" src="images/designs/workspace1.png">
                 </div>
             </section>
         </div>
-        <section class="borderColor_Change primary-background intro-section">
+        <section class="default_BorderColor borderColor_Change primary-background intro-section">
             <div class="container-xl">
                 <div class="intro-container">
                     <div class="arrow bounce">
@@ -199,7 +218,7 @@
                 </div>
             </div>
         </section>
-        <section class="borderColor_Change projects-section">
+        <section class="default_BorderColor borderColor_Change projects-section">
             <div style="height: 150px; overflow: hidden;" >
                 <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
                     <path d="M-17.12,148.52 C152.69,74.50 426.01,-33.05 512.02,160.36 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #252934;"></path>

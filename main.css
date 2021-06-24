@@ -101,6 +101,16 @@ body {
     transform: rotate(-180deg);
 }
 
+.vertical_button {
+    transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+}
+
+.vertical_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
 .vertical-text-style {
     font-size: 1rem;
     color: #252934;
@@ -109,7 +119,7 @@ body {
 
 .verticalContainer {
     position: absolute;
-    top: 0;
+    top: 100px;
     left: 0;
 }
 
@@ -379,21 +389,5 @@ a:hover{
 }
 
 .borderColor_Change {
-    border-top: 5px #8c52ff solid;
-}
-
-.default_Color {
-    color: #8c52ff;
-}
-
-.blue_Color {
-    color: blue;
-}
-
-.red_Color {
-    color: red;
-}
-
-.blue_Color {
-    color: green;
+    border-top: #8c52ff solid 5px;
 }
