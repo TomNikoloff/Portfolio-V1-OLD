@@ -79,23 +79,3 @@ function changeToYellow() {
   let workspace_Img = document.getElementById('workspace_Img');
   workspace_Img.src = "images/designs/workspace5.png";
 }
-
-
-/*
-Not working correctly. Will need to change
-
-function randomColors() {
-  let color = ['textColor_Change', 'blue_Color', 'red_Color', 'green_Color']
-  let borderColor = ['default_BorderColor', 'blue_BorderColor', 'red_BorderColor', 'green_BorderColor']
-
-  for (let i=0; i < textColor_Change.length; i ++) {
-    let randomNumber = Math.floor(Math.random() * 4);
-    textColor_Change[i].classList.remove(textColor_Change[i].classList[0]);
-    textColor_Change[i].classList.add(color[randomNumber]);
-  }
-  for (let i=0; i < borderColor_Change.length; i ++) {
-    let randomNumber = Math.floor(Math.random() * 4);
-    borderColor_Change[i].classList.remove(borderColor_Change[i].classList[0]);
-    borderColor_Change[i].classList.add(borderColor[randomNumber]);
-  }
-}*/

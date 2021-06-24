@@ -98,12 +98,14 @@ body {
 
 .vertical-text {
     writing-mode: tb-rl;
-    transform: rotate(-180deg);
+    transform: rotate(180deg);
 }
 
 .vertical_button {
     transform:rotate(90deg);
     -webkit-transform:rotate(90deg);
+    color: #8c52ff;
+    background-color: #252934;;
 }
 
 .vertical_flex {
