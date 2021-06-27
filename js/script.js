@@ -19,10 +19,10 @@ function changeToDefault() {
     borderColor_Change[i].style.borderColor = "#8c52ff";
   }
   let logo_Img = document.getElementById('logo_Img');
-  logo_Img.src = "images/designs/logo.png";
+  logo_Img.src = "img/designs/logo.png";
 
   let workspace_Img = document.getElementById('workspace_Img');
-  workspace_Img.src = "images/designs/workspace1.png";
+  workspace_Img.src = "img/designs/workspace1.png";
 
   for (i = 0; i < linkColor_Change.length; i++) {
     linkColor_Change[i].classList.remove("link-blue", "link-red", "link-green", "link-yellow");
@@ -38,10 +38,10 @@ function changeToBlue() {
     borderColor_Change[i].style.borderColor = "#5271ff";
   }
   let logo_Img = document.getElementById('logo_Img');
-  logo_Img.src = "images/designs/logo4.png";
+  logo_Img.src = "img/designs/logo4.png";
 
   let workspace_Img = document.getElementById('workspace_Img');
-  workspace_Img.src = "images/designs/workspace4.png";
+  workspace_Img.src = "img/designs/workspace4.png";
 
   for (i = 0; i < linkColor_Change.length; i++) {
     linkColor_Change[i].classList.remove("link-default","link-red", "link-green", "link-yellow");
@@ -57,10 +57,10 @@ function changeToRed() {
     borderColor_Change[i].style.borderColor = "#ff5757";
   }
   let logo_Img = document.getElementById('logo_Img');
-  logo_Img.src = "images/designs/logo2.png";
+  logo_Img.src = "img/designs/logo2.png";
 
   let workspace_Img = document.getElementById('workspace_Img');
-  workspace_Img.src = "images/designs/workspace2.png";
+  workspace_Img.src = "img/designs/workspace2.png";
 
   for (i = 0; i < linkColor_Change.length; i++) {
     linkColor_Change[i].classList.remove("link-default","link-blue", "link-green", "link-yellow");
@@ -76,10 +76,10 @@ function changeToGreen() {
     borderColor_Change[i].style.borderColor = "#7ed957";
   }
   let logo_Img = document.getElementById('logo_Img');
-  logo_Img.src = "images/designs/logo3.png";
+  logo_Img.src = "img/designs/logo3.png";
 
   let workspace_Img = document.getElementById('workspace_Img');
-  workspace_Img.src = "images/designs/workspace3.png";
+  workspace_Img.src = "img/designs/workspace3.png";
 
   for (i = 0; i < linkColor_Change.length; i++) {
     linkColor_Change[i].classList.remove("link-default","link-red", "link-blue", "link-yellow");
@@ -95,10 +95,10 @@ function changeToYellow() {
     borderColor_Change[i].style.borderColor = "#ffde59";
   }
   let logo_Img = document.getElementById('logo_Img');
-  logo_Img.src = "images/designs/logo5.png";
+  logo_Img.src = "img/designs/logo5.png";
 
   let workspace_Img = document.getElementById('workspace_Img');
-  workspace_Img.src = "images/designs/workspace5.png";
+  workspace_Img.src = "img/designs/workspace5.png";
 
   for (i = 0; i < linkColor_Change.length; i++) {
     linkColor_Change[i].classList.remove("link-default","link-red", "link-green", "link-blue");

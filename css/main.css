@@ -405,3 +405,23 @@ body {
 .borderColor_Change {
     border-top: #8c52ff solid 5px;
 }
+
+/* Rock, Paper, Scissors classes*/
+.rpsImgDiv:hover .rpsImg {
+    opacity: 0.3;
+    transition: .5s ease;
+}
+
+.rpsImgDiv:hover {
+    opacity: 1;
+    transition: .5s ease;
+}
+
+.resetButton {
+    background-color: #252934;
+}
+
+#resetButtonDiv {
+    display: none;
+}
+/* Rock, Paper, Scissors classes end*/

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset ="utf-8">
+    <meta name ="description" content ="Thomas Nikoloff Portfolio">
+    <meta name ="author" content ="Thomas Nikoloff">
+    <meta name ="keywords" content="Thomas, Nikoloff">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomas Nikoloff</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <script src="../../js/rps.js"></script>
+    <link rel ="stylesheet" href ="../../css/main.css">
+    <script src="https://kit.fontawesome.com/0ff32d8fcb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container mt-2">
+        <div>
+            <a href="https://tomnikoloff.github.io./">
+                <img class="rotate mt-5 ml-5" height="100" src="../../img/designs/logo.png">
+            </a>
+        </div>
+        <h1 class="text-center pb-5">Rock, Paper, Scissors</h1>
+        <h2 id="roundCounter" class="text-center p-3">Round 1</h2>
+        <div class="row" id="rpsMainDiv">
+            <div class="col text-center">
+                <div>
+                    <h5>Wins</h5>
+                </div>
+                <div>
+                    <h3 id="humanWinCounter" class="textColor_Change">0</h3> 
+                </div>
+                <div id="humanDiv" class="rpsImgDiv">
+                    <img id="rock" class="rpsImg" src="static/images/rock.jpg" onclick="rpsGame(this)">
+                </div>
+            </div>
+            <div class="col text-center">
+                <div>
+                    <h5>Draw</h5>
+                </div>
+                <div>
+                    <h3 id="drawCounter" class="textColor_Change">0</h3> 
+                </div>
+                <div id="messageDiv" class="rpsImgDiv">
+                    <img id="paper" class="rpsImg" src="static/images/paper.jpg" onclick="rpsGame(this)">
+                </div>
+                <div id="resetButtonDiv">
+                    <button id="resetButton" class="btn btn-secondary resetButton" onclick="resetGame()">Play Again</button>
+                </div>
+            </div>
+            <div class="col text-center">
+                <div>
+                    <h5>Bot Wins</h5>
+                </div>
+                <div>
+                    <h3 id="botWinCounter" class="textColor_Change">0</h3> 
+                </div>
+                <div id="botDiv" class="rpsImgDiv">
+                    <img id="scissors" class="rpsImg" src="static/images/scissors.jpg" onclick="rpsGame(this)">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="static/js/script.js"></script>
+</body>
+</html>

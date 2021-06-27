@@ -24,9 +24,9 @@ body {
 
 .rotate:hover
 {
-        -webkit-transform: rotateZ(-30deg);
-        -ms-transform: rotateZ(-30deg);
-        transform: rotateZ(-30deg);
+    -webkit-transform: rotateZ(-30deg);
+    -ms-transform: rotateZ(-30deg);
+    transform: rotateZ(-30deg);
 }
 
 .rpsImgDiv:hover .rpsImg {
@@ -34,7 +34,7 @@ body {
     transition: .5s ease;
 }
 
-.rpsImgDiv:hover .projOverlay {
+.rpsImgDiv:hover {
     opacity: 1;
     transition: .5s ease;
 }
@@ -44,5 +44,5 @@ body {
 }
 
 #resetButtonDiv {
-  display: none;
+    display: none;
 }
