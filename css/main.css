@@ -190,6 +190,10 @@ body {
     text-decoration: none;
 }
 
+.arrow-down:hover{
+    color: #8c52ff;
+}
+
 .arrow {
     padding-top: 40px;
     text-align: center;
