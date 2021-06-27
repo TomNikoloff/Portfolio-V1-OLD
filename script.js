@@ -9,6 +9,7 @@ $(document).ready(function () {
   
 let textColor_Change = document.getElementsByClassName('textColor_Change');
 let borderColor_Change = document.getElementsByClassName('borderColor_Change');
+let linkColor_Change = document.getElementsByTagName('a');
 
 function changeToDefault() {
   for (i = 0; i < textColor_Change.length; i++) {
@@ -22,6 +23,11 @@ function changeToDefault() {
 
   let workspace_Img = document.getElementById('workspace_Img');
   workspace_Img.src = "images/designs/workspace1.png";
+
+  for (i = 0; i < linkColor_Change.length; i++) {
+    linkColor_Change[i].classList.remove("link-blue", "link-red", "link-green", "link-yellow");
+    linkColor_Change[i].classList.add("link-default");
+  }
 }
 
 function changeToBlue() {
@@ -36,6 +42,11 @@ function changeToBlue() {
 
   let workspace_Img = document.getElementById('workspace_Img');
   workspace_Img.src = "images/designs/workspace4.png";
+
+  for (i = 0; i < linkColor_Change.length; i++) {
+    linkColor_Change[i].classList.remove("link-default","link-red", "link-green", "link-yellow");
+    linkColor_Change[i].classList.add("link-blue");
+  }
 }
 
 function changeToRed() {
@@ -50,6 +61,11 @@ function changeToRed() {
 
   let workspace_Img = document.getElementById('workspace_Img');
   workspace_Img.src = "images/designs/workspace2.png";
+
+  for (i = 0; i < linkColor_Change.length; i++) {
+    linkColor_Change[i].classList.remove("link-default","link-blue", "link-green", "link-yellow");
+    linkColor_Change[i].classList.add("link-red");
+  }
 }
 
 function changeToGreen() {
@@ -64,6 +80,11 @@ function changeToGreen() {
 
   let workspace_Img = document.getElementById('workspace_Img');
   workspace_Img.src = "images/designs/workspace3.png";
+
+  for (i = 0; i < linkColor_Change.length; i++) {
+    linkColor_Change[i].classList.remove("link-default","link-red", "link-blue", "link-yellow");
+    linkColor_Change[i].classList.add("link-green");
+  }
 }
 
 function changeToYellow() {
@@ -78,4 +99,9 @@ function changeToYellow() {
 
   let workspace_Img = document.getElementById('workspace_Img');
   workspace_Img.src = "images/designs/workspace5.png";
+
+  for (i = 0; i < linkColor_Change.length; i++) {
+    linkColor_Change[i].classList.remove("link-default","link-red", "link-green", "link-blue");
+    linkColor_Change[i].classList.add("link-yellow");
+  }
 }

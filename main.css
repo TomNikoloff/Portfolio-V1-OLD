@@ -166,16 +166,28 @@ body {
     padding: 0 150px;
 }
 
-a:hover{
+.link-default:hover {
     color: #8c52ff;
+}
+
+.link-blue:hover {
+    color: #5271ff;
+}
+
+.link-red:hover {
+    color: #ff5757;
+}
+
+.link-green:hover {
+    color: #7ed957;
+}
+
+.link-yellow:hover {
+    color: #ffde59;
 }
 
 .arrow-down{
     text-decoration: none;
-}
-
-.arrow-down:hover{
-    color: #252934;
 }
 
 .arrow {
