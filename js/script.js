@@ -105,3 +105,14 @@ function changeToYellow() {
     linkColor_Change[i].classList.add("link-yellow");
   }
 }
+
+/*window.addEventListener('scroll',()=>{
+  let content = document.getElementById('intro');
+  let contentPosition = content.getBoundingClientRect().top;
+  let screenPosition = window.innerHeight;
+  if(contentPosition < screenPosition){
+    content.classList.add('activeIntro');
+  } else {
+    content.classList.remove('activeIntro');
+  }
+})*/

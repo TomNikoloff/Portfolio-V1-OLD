@@ -217,6 +217,17 @@ body {
     }
   }
 
+/*#intro {
+    opacity: 0.3;
+    transform: scale(0.1);
+    transition: all 1s ease-in-out;
+}
+
+.activeIntro {
+    opacity: 1;
+    transform: scale(1);
+}*/
+
 .intro {
     padding-top: 4rem;
     font-size:  1.9rem;
@@ -320,9 +331,9 @@ body {
 
 .rotate:hover
 {
-        -webkit-transform: rotateZ(-30deg);
-        -ms-transform: rotateZ(-30deg);
-        transform: rotateZ(-30deg);
+    -webkit-transform: rotateZ(-30deg);
+    -ms-transform: rotateZ(-30deg);
+    transform: rotateZ(-30deg);
 }
 
 .projects-section {
