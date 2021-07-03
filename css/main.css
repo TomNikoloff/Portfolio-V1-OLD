@@ -96,6 +96,11 @@ body {
     box-shadow: none;
 }
 
+.btn_Style {
+    color: #8c52ff;
+    background-color: #252934;;
+}
+
 .vertical-text {
     writing-mode: tb-rl;
     transform: rotate(180deg);
@@ -104,8 +109,6 @@ body {
 .vertical_button {
     transform:rotate(90deg);
     -webkit-transform:rotate(90deg);
-    color: #8c52ff;
-    background-color: #252934;;
 }
 
 .vertical_flex {
@@ -440,3 +443,42 @@ body {
     display: none;
 }
 /* Rock, Paper, Scissors classes end*/
+
+/*Blackjack Classes*/
+.blackjack-table {
+    background: rgb(37,41,52);
+    background: linear-gradient(90deg, rgba(37,41,52,1) 0%, rgba(140,82,255,1) 45%, rgba(37,41,52,1) 100%);
+    height: 65vh;
+    border: #252934 solid 3px;
+}
+
+.blackjackBox-border {
+    border: #252934 2px solid;
+    height: 50vh;
+}
+
+.blackjackBox-border img {
+    width: 25%;
+    padding: 10px;
+}
+
+.blackjack-border {
+    border-top: #252934 solid 4px;
+}
+
+.blackjack-button-flexbox {
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+    margin: 10px auto;
+    padding: 10px;
+    border: #252934 solid 2px;
+}
+
+.blackjack-score {
+    color: #252934
+}
+
+#your-blackjack-result, #dealer-blackjack-result {
+    color:#ffffff;
+}
