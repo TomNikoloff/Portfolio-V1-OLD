@@ -7,6 +7,10 @@ let blackjackGame = {
     'cardsMap': {'2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9, '10': 10, 'K': 10, 'J': 10, 'Q': 10, 'A': [1, 11]},
 };
 
+let wCounter = 0;
+let dCounter = 0;
+let botCounter = 0;
+
 const YOU = blackjackGame['you'];
 const DEALER = blackjackGame['dealer'];
 
@@ -39,29 +43,6 @@ function showCard(card, activePlayer) {
         document.querySelector(activePlayer['div']).appendChild(cardImage);
         hitSound.play();
     } 
-}
-
-function blackjackDeal() {
-    let yourImages = document.querySelector('#your-box').querySelectorAll('img');
-    
-    for (let i=0; i < yourImages.length; i++) {
-        yourImages[i].remove();
-    }
- 
-    let dealerImages = document.querySelector('#dealer-box').querySelectorAll('img');
-
-    for (let i=0; i < dealerImages.length; i++) {
-        dealerImages[i].remove();
-    }
-    
-    YOU['score'] = 0;
-    DEALER['score'] = 0;
-
-    document.querySelector('#your-blackjack-result').textContent = 0;
-    document.querySelector('#dealer-blackjack-result').textContent = 0;
-
-    document.querySelector('#your-blackjack-result').style.color = '#ffffff';
-    document.querySelector('#dealer-blackjack-result').style.color = '#ffffff';
 }
 
 function updateScore (card, activePlayer) {
@@ -143,4 +124,46 @@ function showResult(winner) {
 
     document.querySelector('#blackjack-result').textContent = message;
     document.querySelector('#blackjack-result').style.color = messageColor;
+}
+
+function resultTracker(winner) {
+    let winCounter = document.querySelector('#wins_Counter');
+    let drawsCounter = document.querySelector('#draws_Counter');
+    let lossesCounter = document.querySelector('#losses_Counter');
+
+    if (winner === YOU) {
+        wCounter++
+        winCounter.innerHTML = wCounter;
+    } else if (winner === DEALER) {
+        botCounter++
+        lossesCounter.innerHTML = botCounter;
+    } else {
+        dCounter++
+        drawsCounter.innerHTML = dCounter;
+    }
+    console.log(winner);
+}
+
+function blackjackDeal() {
+    let yourImages = document.querySelector('#your-box').querySelectorAll('img');
+    
+    for (let i=0; i < yourImages.length; i++) {
+        yourImages[i].remove();
+    }
+ 
+    let dealerImages = document.querySelector('#dealer-box').querySelectorAll('img');
+
+    for (let i=0; i < dealerImages.length; i++) {
+        dealerImages[i].remove();
+    }
+    
+    resultTracker(decideWinner());
+    YOU['score'] = 0;
+    DEALER['score'] = 0;
+
+    document.querySelector('#your-blackjack-result').textContent = 0;
+    document.querySelector('#dealer-blackjack-result').textContent = 0;
+
+    document.querySelector('#your-blackjack-result').style.color = '#ffffff';
+    document.querySelector('#dealer-blackjack-result').style.color = '#ffffff';
 }
