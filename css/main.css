@@ -98,7 +98,9 @@ body {
 
 .btn_Style {
     color: #8c52ff;
-    background-color: #252934;;
+    background-color: #252934;
+    border: #252934 solid 1px;
+    border-radius: 7px;
 }
 
 .vertical-text {
