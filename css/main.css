@@ -173,14 +173,15 @@ body {
 
 .intro {
     padding-top: 4rem;
-    font-size:  1rem; /*1.9rem*/
+    font-size: clamp(1.5rem, 3.5vw, 2rem); /*1.9rem @ 1200px*/
 }
 
 .sub-intro {
     padding-top: 20px;
-    font-size: 0.66rem; /*1.25rem*/
+    font-size: clamp(1rem, 1.5vw, 1.25rem); /*1.25rem @ 1200px*/
     color: #fff;
     line-height: 1.5;
+    text-align: left;
 }
 
 .link-default:hover {
@@ -394,27 +395,17 @@ body {
 }
 
 @media (min-width: 576px) {
-
+    .sub-intro {
+        text-align: center;
+    }
 }
 
 @media (min-width: 768px) {
-    .intro {
-        font-size: 1.45rem;
-    }
-    .sub-intro {
-        font-size: 1rem;
-    }
 }
 
 @media (min-width: 992px) {
     .contact-form {
         padding: 0 150px;
-    }
-    .intro {
-        font-size: 1.9rem;
-    }
-    .sub-intro {
-        font-size: 1rem;
     }
 }
 
