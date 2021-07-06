@@ -124,6 +124,7 @@ body {
     display: inline;
 }
 
+/*Temp display none on small screens until color chnage menu is fixed on smaller screens.*/
 .verticalContainer {
     display: none;
     position: absolute;
