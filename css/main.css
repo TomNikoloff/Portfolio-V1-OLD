@@ -354,6 +354,8 @@ body {
 .projImg {
     opacity: 1;
     transition: 1s ease;
+    border: #252934 solid 2px;
+    border-radius: 10px;
 }
 
 .projOverlay {
@@ -495,3 +497,82 @@ body {
 #your-blackjack-result, #dealer-blackjack-result {
     color:#ffffff;
 }
+/*Blackjack End*/
+
+/*To-Do List Start*/
+
+#user_Input {
+    border: #252934 solid 3px;
+    border-radius: 5px;
+    padding: 5px;
+    min-width: 70%;
+}
+
+#add_Li {
+	border: none;
+	padding: 10px 15px;
+	border-radius: 5px;
+	color: #bebebe;
+	background-color: #252934;
+	transition: all 0.75s ease;
+	-webkit-transition: all 0.75s ease;
+	-moz-transition: all 0.75s ease;
+	-ms-transition: all 0.75s ease;
+	-o-transition: all 0.75 ease;
+}
+
+#add_Li:hover{
+	background-color: #464b5a;
+	color: #8c52ff;
+}
+
+.intro_tdl {
+    border: 2px #8c52ff solid;
+    border-radius: 5px;
+    background-color: #252934;
+    padding: 5px;
+    color: #fff;
+}
+
+.subIntro_tdl {
+    border: 2px #252934 solid;
+    border-radius: 5px;
+    background-color: #8c52ff;
+    padding: 5px;
+    color: #fff;
+}
+
+.tdl_ListItem {
+    list-style-type: none;
+    border: 2px #8c52ff solid;
+    border-radius: 5px;
+    background-color: #252934;
+    padding: 10px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.tdl_ListItem > button {
+    font-weight: normal;
+	background: none;
+	border: none;
+	float: right;
+	color: #ffffff;
+	font-weight: 700;
+}
+
+.done {
+    list-style-type: none;
+    border: 2px #252934 solid;
+    border-radius: 5px;
+    background-color: #8c52ff;
+    padding: 10px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.delete {
+    display: none;
+}
+
+/*To-Do List End*/
