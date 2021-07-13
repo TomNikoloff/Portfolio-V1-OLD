@@ -354,6 +354,7 @@ body {
 .projImg {
     opacity: 1;
     transition: 1s ease;
+    box-shadow: 0 0px 15px #252934;
     border: #252934 solid 2px;
     border-radius: 10px;
 }
@@ -574,5 +575,8 @@ body {
 .delete {
     display: none;
 }
-
 /*To-Do List End*/
+
+.hex_Div {
+    margin: 20vh 0;
+}
