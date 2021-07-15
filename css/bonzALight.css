@@ -1,0 +1,289 @@
+
+* {
+  border-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: lightgrey;
+}
+
+main {
+    background-color: white;
+}
+
+header {
+  background-image: url("../img/bonzALight/plantlight-background1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  max-height: 100%;
+}
+
+h2 {
+  margin: 0;
+  padding-top: 10px;
+}
+
+#header-img {
+  position: relative;
+  left: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+#header-section {
+  position: absolute;
+  top: 15%;
+  left:3%;
+  text-align: center;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  z-index: 1;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Raleway', sans-serif;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 30px;
+}
+
+#banner {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(#005c99, #006bb3, #007acc, #006bb3,#005c99);
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.banner-section {
+  display: block;
+  text-align: center;
+}
+
+.small-icon {
+  width: 50px;
+  height: 50px;
+}
+
+h1 {
+  font-size: 7vh;
+  line-height: 1.2;
+}
+
+video {
+  width: 1000px;
+  height: auto;
+}
+
+@media (max-width: 1100px) {
+  video {
+    max-width: 90%
+  }
+}
+
+.video-div {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  line-height: 1.5;
+}
+
+ #features {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-content: center;
+   align-items: center;
+   padding: 10vh;
+   background: linear-gradient(#005c99, #006bb3, #007acc, #006bb3,#005c99);
+   border-top: 1px solid black;
+   border-bottom: 1px solid black;
+ }
+
+ .features-section {
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 360px;
+  max-width: 100%;
+  text-align: center;
+  padding: 1em;
+  background: white;
+  line-height: 1.5;
+  box-shadow: 0 0px 15px black;
+  margin: 10px 0;
+}
+
+h2 {
+  text-align: center;
+}
+
+#main-made {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+
+#made {
+  position: relative;
+  width: 560px;
+  max-width: 100%;
+  height: 315px;
+  margin: 0 10px 5vh 10px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+#made-img {
+  width: 99%;
+}
+
+#gb-div {
+  height:25vh;
+}
+
+#gallery-banner {
+  background-image: url("../img/bonzALight/bonsai.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+#gallery {
+  width: 90%;
+  margin: 0 auto 0;
+  display: table;
+  box-sizing: border-box;
+}
+
+.gallery-row {
+  margin: 10px 0;
+}
+
+.gallery-column {
+  display: table-cell;
+  width: 33.33333%;
+  padding: 5px 10px;
+}
+
+.gallery-img {
+  max-width: 100%;
+}
+
+@media (max-width: 900px)
+{
+  #gallery {
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+  }
+  .gallery-column {
+    width:100%;
+    display: block;
+    margin: 10px 0;
+  }
+  .gallery-row {
+    margin: 0;
+  }
+}
+
+footer {
+  background-color: lightgrey;
+  border-top: 1px groove black;
+}
+
+#top-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+footer h2 {
+  margin 1.5em
+}
+
+@media (max-width: 600px) {
+    #top-footer {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 420px) {
+    #top-footer {
+        grid-template-columns: 1fr;
+    }
+}
+
+.footer-section {
+  text-align: center;
+
+}
+
+.social-icon {
+  width: 50px;
+  height: 50px;
+}
+
+#contact-contents {
+  text-align: left;
+}
+
+.contact li {
+line-height: 2;
+}
+
+li:hover {
+  opacity: 0.6;
+}
+
+#email {
+  border: none;
+  border-bottom: 2px solid black;
+  background: transparent;
+  max-width: 100%;
+}
+
+#bottom-footer {
+  text-align: center;
+}
+
+#submit {
+padding: 0.4em;
+background: linear-gradient(#333, #222, #111);
+border: 1px ridge #333333;
+border-radius: 3px;
+font-family: var(--subheadings, sans-serif);
+font-weight: bold;
+letter-spacing: 2px;
+color: white;
+}
