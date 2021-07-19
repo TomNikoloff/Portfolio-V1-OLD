@@ -6,12 +6,16 @@ $(document).ready(function () {
       $('.animated-icon1').toggleClass('open');
     });
   });
-  
+
+let buttonColor_Change = document.getElementsByClassName('btn_Style');
 let textColor_Change = document.getElementsByClassName('textColor_Change');
 let borderColor_Change = document.getElementsByClassName('borderColor_Change');
 let linkColor_Change = document.getElementsByTagName('a');
 
 function changeToDefault() {
+  for (i = 0; i < buttonColor_Change.length; i++) {
+    buttonColor_Change[i].style.color = "#8c52ff";
+  }
   for (i = 0; i < textColor_Change.length; i++) {
     textColor_Change[i].style.color = "#8c52ff";
   }
@@ -31,6 +35,9 @@ function changeToDefault() {
 }
 
 function changeToBlue() {
+  for (i = 0; i < buttonColor_Change.length; i++) {
+    buttonColor_Change[i].style.color = "#5271ff";
+  }
   for (i = 0; i < textColor_Change.length; i++) {
     textColor_Change[i].style.color = "#5271ff";
   }
@@ -50,6 +57,9 @@ function changeToBlue() {
 }
 
 function changeToRed() {
+  for (i = 0; i < buttonColor_Change.length; i++) {
+    buttonColor_Change[i].style.color = "#ff5757";
+  }
   for (i = 0; i < textColor_Change.length; i++) {
     textColor_Change[i].style.color = "#ff5757";
   }
@@ -69,6 +79,9 @@ function changeToRed() {
 }
 
 function changeToGreen() {
+  for (i = 0; i < buttonColor_Change.length; i++) {
+    buttonColor_Change[i].style.color = "#7ed957";
+  }
   for (i = 0; i < textColor_Change.length; i++) {
     textColor_Change[i].style.color = "#7ed957";
   }
@@ -88,6 +101,9 @@ function changeToGreen() {
 }
 
 function changeToYellow() {
+  for (i = 0; i < buttonColor_Change.length; i++) {
+    buttonColor_Change[i].style.color = "#ffde59";
+  }
   for (i = 0; i < textColor_Change.length; i++) {
     textColor_Change[i].style.color = "#ffde59";
   }
