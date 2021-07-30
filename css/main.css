@@ -173,17 +173,20 @@ body {
     padding: 0 20px;
 }
 
-.intro {
+.header {
     padding-top: 4rem;
     font-size: clamp(1.5rem, 3.5vw, 2rem); /*1.9rem @ 1200px*/
 }
 
-.sub-intro {
-    padding-top: 20px;
+.description {
     font-size: clamp(1rem, 1.5vw, 1.25rem); /*1.25rem @ 1200px*/
-    color: #fff;
     line-height: 1.5;
-    text-align: left;
+    text-align: center;
+}
+
+.is_White {
+    padding-top: 20px;
+    color: #fff;
 }
 
 .link-default:hover {
@@ -345,6 +348,11 @@ body {
     transform: rotateZ(-30deg);
 }
 
+.off_White {
+    border-top: 1px solid #E6E8E9;
+    background-color: #f8fafd;
+}
+
 .projects-section {
     border-top: 5px solid #8c52ff;
     background-color: #f5f5f5;
@@ -446,28 +454,70 @@ body {
     border-top: #8c52ff solid 5px;
 }
 
+.testimonials_Img {
+    display: block;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.testimonials {
+    padding: 50px 0 100px 0;
+}
+
 .bottom-div {
     padding: 100px 0 250px 0;
 }
 
 .contact-Section {
-    background-color: #1e242c;
-    border:#8c52ff solid 3px;
+    background-color: #fff;
+    border:#252934 solid 3px;
     border-radius: 15px;
-    height: 100px;
-    margin-top: -9rem;
+    height: 150px;
+    margin-top: -11rem;
 
 }
 
 .contact-Div {
     display: flex;
-    justify-content: center; 
+    justify-content: space-evenly; 
     align-items: center; 
 }
 
+.contact-Logo {
+    vertical-align: middle;
+}
+
 .footer {
-    width: 200px;
+    width: 500px;
     margin: 0 auto;
+}
+
+.footer_Quote {
+    font-size: 1.5rem;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.footer_Copyright {
+    font-size: 1rem;
+}
+
+.html_Tag {
+    width: 75px;
+}
+
+.float_Left {
+    float: left;
+}
+
+.float_Right {
+    float: right;
+}
+
+.clear_Float {
+    clear: right;
 }
 
 /* Rock, Paper, Scissors classes*/
@@ -611,12 +661,7 @@ body {
     margin: 20vh 0;
 }
 
-.test {
-    margin-bottom: 50px;
-    border-top: 1px solid #E6E8E9;
-    background-color: #f8fafd;
-    
-}
+
 
 .test-sub {
     color: #252934 !important;
