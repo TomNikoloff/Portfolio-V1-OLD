@@ -404,6 +404,17 @@ body {
     text-align: center; 
 }
 
+.projOverlay_Freelance {
+    transition: 0.45s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center; 
+}
+
 .projBox:hover .projImg {
     opacity: 0.5;
 }
@@ -416,9 +427,18 @@ body {
     opacity: 1;
 }
 
+.projBox:hover .projOverlay_Freelance {
+    opacity: 1;
+}
+
 .projOverCon {
     padding: 10px;
     border:#fff 2px solid;
+}
+
+.projOver_Freelance {
+    padding: 10px;
+    border:#252934 2px solid;
 }
 
 .projOverCon a{
@@ -509,13 +529,26 @@ body {
     padding: 100px 0 50px 0;
 }
 
+/*.contact_Link {
+    padding: 10px;
+    border: #252934 3px solid;
+    width: 200px;
+}*/
+
+.btnStyle_Contact {
+    font-size: 25px;
+    color: #8c52ff;
+    background-color: #fff;
+    border: #252934 solid 3px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
 .contact-Section {
     background-color: #fff;
     border:#252934 solid 3px;
     border-radius: 15px;
-    height: 150px;
     margin-top: -11rem;
-
 }
 
 .contact-Div {
