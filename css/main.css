@@ -174,7 +174,7 @@ body {
 }
 
 .header {
-    padding-top: 4rem;
+    padding-top: 3rem;
     font-size: clamp(1.5rem, 3.5vw, 2rem); /*1.9rem @ 1200px*/
 }
 
@@ -467,7 +467,7 @@ body {
 }
 
 .bottom-div {
-    padding: 100px 0 250px 0;
+    padding: 100px 0 50px 0;
 }
 
 .contact-Section {
@@ -505,7 +505,7 @@ body {
 }
 
 .html_Tag {
-    width: 75px;
+    width: 50px;
 }
 
 .float_Left {
