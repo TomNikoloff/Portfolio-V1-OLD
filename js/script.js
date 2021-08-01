@@ -10,6 +10,7 @@ $(document).ready(function () {
 let buttonColor_Change = document.getElementsByClassName('btn_Style');
 let textColor_Change = document.getElementsByClassName('textColor_Change');
 let borderColor_Change = document.getElementsByClassName('borderColor_Change');
+let borderLinkColor_Change = document.getElementsByClassName('borderLinkColor_Change');
 let linkColor_Change = document.getElementsByTagName('a');
 
 function changeToDefault() {
@@ -21,6 +22,9 @@ function changeToDefault() {
   }
   for (i = 0; i < borderColor_Change.length; i++) {
     borderColor_Change[i].style.borderColor = "#8c52ff";
+  }
+  for (i=0; i < borderLinkColor_Change.length; i++) {
+    borderLinkColor_Change[i].style.borderColor = "#8c52ff";
   }
   let logo_Img = document.getElementById('logo_Img');
   logo_Img.src = "img/designs/logo.png";
@@ -44,6 +48,9 @@ function changeToBlue() {
   for (i = 0; i < borderColor_Change.length; i++) {
     borderColor_Change[i].style.borderColor = "#5271ff";
   }
+  for (i=0; i < borderLinkColor_Change.length; i++) {
+    borderLinkColor_Change[i].style.borderColor = "#5271ff";
+  }
   let logo_Img = document.getElementById('logo_Img');
   logo_Img.src = "img/designs/logo4.png";
 
@@ -65,6 +72,9 @@ function changeToRed() {
   }
   for (i = 0; i < borderColor_Change.length; i++) {
     borderColor_Change[i].style.borderColor = "#ff5757";
+  }
+  for (i=0; i < borderLinkColor_Change.length; i++) {
+    borderLinkColor_Change[i].style.borderColor = "#ff5757";
   }
   let logo_Img = document.getElementById('logo_Img');
   logo_Img.src = "img/designs/logo2.png";
@@ -88,6 +98,9 @@ function changeToGreen() {
   for (i = 0; i < borderColor_Change.length; i++) {
     borderColor_Change[i].style.borderColor = "#7ed957";
   }
+  for (i=0; i < borderLinkColor_Change.length; i++) {
+    borderLinkColor_Change[i].style.borderColor = "#7ed957";
+  }
   let logo_Img = document.getElementById('logo_Img');
   logo_Img.src = "img/designs/logo3.png";
 
@@ -109,6 +122,9 @@ function changeToYellow() {
   }
   for (i = 0; i < borderColor_Change.length; i++) {
     borderColor_Change[i].style.borderColor = "#ffde59";
+  }
+  for (i=0; i < borderLinkColor_Change.length; i++) {
+    borderLinkColor_Change[i].style.borderColor = "#ffde59";
   }
   let logo_Img = document.getElementById('logo_Img');
   logo_Img.src = "img/designs/logo5.png";
