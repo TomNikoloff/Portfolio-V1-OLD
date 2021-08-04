@@ -481,11 +481,11 @@ body {
 }
 
 .contact_Link {
-    font-size: 25px;
+    font-size: 20px;
     border: #252934 solid 3px;
     border-radius: 15px;
     padding: 10px;
-    width: 50%;
+    width: 75%;
     transition: 0.5s ease;
 }
 
@@ -537,6 +537,9 @@ body {
     }
     .projIntro-section{
         padding-bottom: 10rem;
+    }
+    .contact_Link {
+        width: 60%;
     }
     .projects-section {
         margin-top: -8rem;
