@@ -29,6 +29,9 @@ function changeToDefault() {
   let logo_Img = document.getElementById('logo_Img');
   logo_Img.src = "img/designs/logo.png";
 
+  let contact_Img = document.getElementById('contact_Img');
+  contact_Img.src = "img/designs/logo.png";
+
   let workspace_Img = document.getElementById('workspace_Img');
   workspace_Img.src = "img/designs/workspace1.png";
 
@@ -53,6 +56,9 @@ function changeToBlue() {
   }
   let logo_Img = document.getElementById('logo_Img');
   logo_Img.src = "img/designs/logo4.png";
+  
+  let contact_Img = document.getElementById('contact_Img');
+  contact_Img.src = "img/designs/logo4.png";
 
   let workspace_Img = document.getElementById('workspace_Img');
   workspace_Img.src = "img/designs/workspace4.png";
@@ -79,6 +85,9 @@ function changeToRed() {
   let logo_Img = document.getElementById('logo_Img');
   logo_Img.src = "img/designs/logo2.png";
 
+  let contact_Img = document.getElementById('contact_Img');
+  contact_Img.src = "img/designs/logo2.png";
+
   let workspace_Img = document.getElementById('workspace_Img');
   workspace_Img.src = "img/designs/workspace2.png";
 
@@ -104,6 +113,9 @@ function changeToGreen() {
   let logo_Img = document.getElementById('logo_Img');
   logo_Img.src = "img/designs/logo3.png";
 
+  let contact_Img = document.getElementById('contact_Img');
+  contact_Img.src = "img/designs/logo3.png";
+
   let workspace_Img = document.getElementById('workspace_Img');
   workspace_Img.src = "img/designs/workspace3.png";
 
@@ -128,6 +140,9 @@ function changeToYellow() {
   }
   let logo_Img = document.getElementById('logo_Img');
   logo_Img.src = "img/designs/logo5.png";
+
+  let contact_Img = document.getElementById('contact_Img');
+  contact_Img.src = "img/designs/logo5.png";
 
   let workspace_Img = document.getElementById('workspace_Img');
   workspace_Img.src = "img/designs/workspace5.png";
