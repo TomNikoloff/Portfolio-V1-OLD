@@ -18,21 +18,31 @@
       <script src="https://kit.fontawesome.com/0ff32d8fcb.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <section class="contact-section">
-                    <div class="contact-form">
-                        <form id="contact-form" method="POST" action="contact_form_handler.php">
-                           <input name="name" type="text" class="form-control" placeholder="Enter your name here" required>
-                           <br>
-                           <input name="email" type="email" class="form-control" placeholder="Enter your email here" required>
-                           <br>
-                           <input name="subject" type="text" class="form-control" placeholder="Message subject" required>
-                           <textarea name="message" class="form-control" placeholder="Enter your comments here......" row="4" required></textarea>
-                           <br>
-                           <div class="text-center pb-5">
-                             <input type="submit" class="btn btn-secondary submit" value="Submit">
-                           </div>
-                        </form>
-                    </div>
+        <div class="container-lg">
+          <div>
+            <a href="index.html">
+                <img class="rotate mt-5 ml-5" height="100" src="img/designs/logo.png">
+            </a>
+        </div>
+        <h1 class="text-center pb-5">Thanks for dropping by.</h1>
+        </div>
+        <section class="off_White">
+          <div class="container-md mt-5">
+            <div class="contact-form">
+              <form id="contact-form" method="POST" action="contact_form_handler.php">
+                 <input name="name" type="text" class="form-control" placeholder="Enter your name here" required>
+                 <br>
+                 <input name="email" type="email" class="form-control" placeholder="Enter your email here" required>
+                 <br>
+                 <input name="subject" type="text" class="form-control mb-3" placeholder="Message subject" required>
+                 <textarea name="message" class="form-control" placeholder="Enter your comments here......" row="4" required></textarea>
+                 <br>
+                 <div class="text-center pb-5">
+                   <input type="submit" class="btn_Style btn btn-secondary submit" value="Submit">
+                 </div>
+              </form>
+            </div>
+          </div>
         </section>
     </body>
 </html>
