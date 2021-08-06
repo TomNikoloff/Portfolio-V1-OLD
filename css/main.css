@@ -97,10 +97,13 @@ body {
 }
 
 .btn_Style {
-    color: #8c52ff;
+    border: #252934 solid 3px;
+    border-radius: 15px;
+    transition: 0.5s ease;
+}
+
+.btn_Style:hover {
     background-color: #252934;
-    border: #252934 solid 1px;
-    border-radius: 7px;
 }
 
 .vertical-text {
@@ -111,6 +114,8 @@ body {
 .vertical_button {
     transform:rotate(90deg);
     -webkit-transform:rotate(90deg);
+    writing-mode:initial;
+    text-align: center;
 }
 
 .vertical_flex {
@@ -124,7 +129,7 @@ body {
     display: inline;
 }
 
-/*Temp display none on small screens until color chnage menu is fixed on smaller screens.*/
+/*Temp display = none on small screens until color chnage menu is fixed on smaller screens.*/
 .verticalContainer {
     display: none;
     position: absolute;
@@ -141,6 +146,7 @@ body {
     color: rgba(10, 10, 10, 0.9);
     font-size: 1.5rem;
     line-height: 1.5;
+    text-align: center;
 }
 
 #nav-bar{
@@ -441,13 +447,6 @@ body {
     opacity: 1;
 }
 
-.form-control {
-    background-color: #1e242c;
-    border: 2px #616161 solid;
-    border-radius: 4px;
-    color: #fff;
-}
-
 .textColor_Change {
     color: #8c52ff;
 }
@@ -476,6 +475,11 @@ body {
     padding: 100px 0 50px 0;
 }
 
+.submit_Con {
+    width: 20%;
+    margin: 20px auto;
+}
+
 .contact_Link {
     font-size: 20px;
     border: #252934 solid 3px;
@@ -489,7 +493,6 @@ body {
     background-color: #252934;
 }
 
-
 .contact-Section {
     background-color: #fff;
     border:#252934 solid 3px;
@@ -500,6 +503,14 @@ body {
 .contact-Logo {
     vertical-align: middle;
 }
+
+.form-control {
+    background-color: #1e242c;
+    border: 2px #616161 solid;
+    border-radius: 4px;
+    color: #fff;
+}
+
 
 .footer_Quote {
     font-size: 1.5rem;
@@ -566,6 +577,27 @@ body {
     }
     .projects-section {
         margin-top: -12rem;
+    }
+    .subtitle {;
+        width: 34em;
+        margin: 0 auto;
+        /*border-right: 2px solid rgba(10, 10, 10, 0.9);*/
+        white-space: nowrap;
+        overflow: hidden;
+    }  
+    
+    /* Typewriter Animation */
+    .anim-typewriter{
+        animation: typewriter 4s steps(44) 1s 1 normal both,
+                blinkTextCursor 500ms steps(44) infinite normal;
+    }
+    @keyframes typewriter{
+        from{width: 0;}
+        to{width: 34em;}
+    }
+    @keyframes blinkTextCursor{
+        from{border-right-color: rgba(10, 10, 10, 0.9);}
+        to{border-right-color: transparent;}
     }
 }
 

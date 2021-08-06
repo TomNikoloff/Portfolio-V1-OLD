@@ -7,15 +7,18 @@ $(document).ready(function () {
     });
   });
 
-let buttonColor_Change = document.getElementsByClassName('btn_Style');
+let buttonColor_Change = document.getElementsByTagName('button');
 let textColor_Change = document.getElementsByClassName('textColor_Change');
 let borderColor_Change = document.getElementsByClassName('borderColor_Change');
 let borderLinkColor_Change = document.getElementsByClassName('borderLinkColor_Change');
 let linkColor_Change = document.getElementsByTagName('a');
 
+console.log(buttonColor_Change);
+
 function changeToDefault() {
   for (i = 0; i < buttonColor_Change.length; i++) {
-    buttonColor_Change[i].style.color = "#8c52ff";
+    buttonColor_Change[i].classList.remove("link-blue", "link-red", "link-green", "link-yellow");
+    buttonColor_Change[i].classList.add("link-default");
   }
   for (i = 0; i < textColor_Change.length; i++) {
     textColor_Change[i].style.color = "#8c52ff";
@@ -43,7 +46,8 @@ function changeToDefault() {
 
 function changeToBlue() {
   for (i = 0; i < buttonColor_Change.length; i++) {
-    buttonColor_Change[i].style.color = "#5271ff";
+    buttonColor_Change[i].classList.remove("link-default","link-red", "link-green", "link-yellow");
+    buttonColor_Change[i].classList.add("link-blue");
   }
   for (i = 0; i < textColor_Change.length; i++) {
     textColor_Change[i].style.color = "#5271ff";
@@ -71,7 +75,8 @@ function changeToBlue() {
 
 function changeToRed() {
   for (i = 0; i < buttonColor_Change.length; i++) {
-    buttonColor_Change[i].style.color = "#ff5757";
+    buttonColor_Change[i].classList.remove("link-default","link-blue", "link-green", "link-yellow");
+    buttonColor_Change[i].classList.add("link-red");
   }
   for (i = 0; i < textColor_Change.length; i++) {
     textColor_Change[i].style.color = "#ff5757";
@@ -99,7 +104,8 @@ function changeToRed() {
 
 function changeToGreen() {
   for (i = 0; i < buttonColor_Change.length; i++) {
-    buttonColor_Change[i].style.color = "#7ed957";
+    buttonColor_Change[i].classList.remove("link-default","link-red", "link-blue", "link-yellow");
+    buttonColor_Change[i].classList.add("link-green");
   }
   for (i = 0; i < textColor_Change.length; i++) {
     textColor_Change[i].style.color = "#7ed957";
@@ -127,7 +133,8 @@ function changeToGreen() {
 
 function changeToYellow() {
   for (i = 0; i < buttonColor_Change.length; i++) {
-    buttonColor_Change[i].style.color = "#ffde59";
+    buttonColor_Change[i].classList.remove("link-default","link-red", "link-green", "link-blue");
+    buttonColor_Change[i].classList.add("link-yellow");
   }
   for (i = 0; i < textColor_Change.length; i++) {
     textColor_Change[i].style.color = "#ffde59";
