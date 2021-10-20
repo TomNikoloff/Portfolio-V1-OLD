@@ -78,8 +78,8 @@ function rpsFrontEnd(humanImageChoice, botImageChoice, finalMessage) {
     messageDiv.appendChild(messageResultDiv);
     botDiv.appendChild(botChoiceDiv);
 
-    humanChoiceDiv.innerHTML = "<img src='" + imagesDatabase[humanImageChoice] + "'>";
-    botChoiceDiv.innerHTML = "<img src='" + imagesDatabase[botImageChoice] + "'>";
+    humanChoiceDiv.innerHTML = "<img style='width: 90%' src='" + imagesDatabase[humanImageChoice] + "'>";
+    botChoiceDiv.innerHTML = "<img style='width: 90%' src='" + imagesDatabase[botImageChoice] + "'>";
     messageResultDiv.innerHTML = "<h1 style='color: " + finalMessage['color'] + "; font-size: 60px; padding-top: 50%; '>" + finalMessage['message'] + "</h1>";
 
     document.getElementById('resetButtonDiv').style.display = "inline";

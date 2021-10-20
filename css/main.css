@@ -618,6 +618,11 @@ body {
 }
 
 /* Rock, Paper, Scissors classes*/
+
+.rpsImg {
+    width: 90%;
+}
+
 .rpsImgDiv:hover .rpsImg {
     opacity: 0.3;
     transition: .5s ease;
