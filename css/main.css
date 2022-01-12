@@ -768,3 +768,39 @@ body {
 .test-sub {
     color: #252934 !important;
 }
+
+.ctr_Title {
+    margin-top: 25vh;
+    font-size: 50px;
+}
+
+#value {
+    font-size: 100px;
+}
+
+.counterBtn_Con {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.ctr_Btn {
+    border: 2px #8c52ff solid;
+    border-radius: 5px;
+    background-color: #252934;
+    padding: 10px;
+    color: #fff;
+    margin: 0 20px;
+}
+
+.ctr_Btn:hover {
+    border: 2px #252934 solid;
+    border-radius: 5px;
+    background-color: #8c52ff;
+    padding: 10px;
+    color: #fff;
+    margin: 0 20px;
+    transition: 0.5s ease-in-out;
+}
+
