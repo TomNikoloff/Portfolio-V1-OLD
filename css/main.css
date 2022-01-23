@@ -596,9 +596,6 @@ body {
 }
 
 @media (min-width: 768px) {
-    .verticalContainer {
-        display: block;
-    }
     .projIntro-section{
         padding-bottom: 12rem;
     }
@@ -611,6 +608,9 @@ body {
 }
 
 @media (min-width: 992px) {
+    .verticalContainer {
+        display: block;
+    }
     .contact_Link {
         width: 75%;
     }
