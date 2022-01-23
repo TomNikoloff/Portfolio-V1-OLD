@@ -7,13 +7,14 @@ $(document).ready(function () {
     });
   });
 
+//Colour Change Start
+
 let buttonColor_Change = document.getElementsByTagName('button');
 let textColor_Change = document.getElementsByClassName('textColor_Change');
 let borderColor_Change = document.getElementsByClassName('borderColor_Change');
 let borderLinkColor_Change = document.getElementsByClassName('borderLinkColor_Change');
 let linkColor_Change = document.getElementsByTagName('a');
-
-console.log(buttonColor_Change);
+const root = document.querySelector(":root");
 
 function changeToDefault() {
   for (i = 0; i < buttonColor_Change.length; i++) {
@@ -42,6 +43,8 @@ function changeToDefault() {
     linkColor_Change[i].classList.remove("link-blue", "link-red", "link-green", "link-yellow");
     linkColor_Change[i].classList.add("link-default");
   }
+
+  root.style.setProperty("--pseudo-backgroundcolor", '#8c52ff');
 }
 
 function changeToBlue() {
@@ -71,6 +74,8 @@ function changeToBlue() {
     linkColor_Change[i].classList.remove("link-default","link-red", "link-green", "link-yellow");
     linkColor_Change[i].classList.add("link-blue");
   }
+  
+  root.style.setProperty("--pseudo-backgroundcolor", '#5271ff');
 }
 
 function changeToRed() {
@@ -100,6 +105,8 @@ function changeToRed() {
     linkColor_Change[i].classList.remove("link-default","link-blue", "link-green", "link-yellow");
     linkColor_Change[i].classList.add("link-red");
   }
+
+  root.style.setProperty("--pseudo-backgroundcolor", '#ff5757');
 }
 
 function changeToGreen() {
@@ -129,6 +136,8 @@ function changeToGreen() {
     linkColor_Change[i].classList.remove("link-default","link-red", "link-blue", "link-yellow");
     linkColor_Change[i].classList.add("link-green");
   }
+
+  root.style.setProperty("--pseudo-backgroundcolor", '#7ed957');
 }
 
 function changeToYellow() {
@@ -158,7 +167,75 @@ function changeToYellow() {
     linkColor_Change[i].classList.remove("link-default","link-red", "link-green", "link-blue");
     linkColor_Change[i].classList.add("link-yellow");
   }
+
+  root.style.setProperty("--pseudo-backgroundcolor", '#ffde59');
 }
+
+//Colour Change End
+
+//Review Cycle Start
+
+const reviews = [
+  {
+    id: 1,
+    name: "Ciaran Gravestock",
+    job: "University of Birmingham: Creative Media Student",
+    img: "https://ciarangravestock.co.uk/images/frosty-1.jpg",
+    text: "Tom was a real pleasure to work with. I sent him across a few designsof how I wanted each page to look and he turned it into a real functioning website.I would definitely be up for working with him again.",
+  },
+  {
+    id: 2,
+    name: "Placeholder Name",
+    job: "Placeholder Occupation",
+    img: "img/designs/logo.png",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco ex commodo consequat."},
+];
+
+const reviewName = document.getElementById('review_Name');
+const reviewJob = document.getElementById('review_Job');
+const reviewImg = document.getElementById('review_Img');
+const reviewDescrip = document.getElementById('review_Descrip');
+
+const prevBtn = document.querySelector('.prev_Btn');
+const nextBtn = document.querySelector('.next_Btn');
+const randomBtn = document.querySelector('.random_Btn');
+
+let currentItem = 0;
+
+window.addEventListener("DOMContentLoaded", function() {
+  reviewCycle(currentItem);
+});
+
+function reviewCycle() {
+  const item = reviews[currentItem];
+  reviewName.textContent = item.name;
+  reviewJob.textContent = item.job;
+  reviewDescrip.textContent = item.text;
+  reviewImg.src = item.img;
+};
+
+prevBtn.addEventListener('click', function(){
+  currentItem--
+  if(currentItem < 0) {
+    currentItem = reviews.length - 1;
+  }
+  reviewCycle();
+});
+
+nextBtn.addEventListener('click', function(){
+  currentItem++
+  if(currentItem > reviews.length - 1) {
+    currentItem = 0;
+  }
+  reviewCycle();
+});
+
+randomBtn.addEventListener('click', function(){
+  currentItem = Math.floor(Math.random() * reviews.length);
+  reviewCycle();
+})
+
+//Review Cycle End
 
 /*window.addEventListener('scroll',()=>{
   let content = document.getElementById('intro');

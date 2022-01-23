@@ -459,16 +459,58 @@ body {
     border:#8c52ff 3px solid;
 }
 
-.testimonials_Img {
-    display: block;
-    border-radius: 50%;
+.review_ImgCon {
+    position: relative;
     width: 100px;
     height: 100px;
+    border-radius: 50%;
     margin: 0 auto;
+    margin-bottom: 1.5rem;
+}
+
+#review_Img {
+    width: 100%;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+}
+
+:root{
+    --pseudo-backgroundcolor: #8c52ff;
+    }
+
+.review_ImgCon::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f10e";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2rem;
+    height: 2rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    transform: translateY(25%);
+    background: var(--pseudo-backgroundcolor);
+    color: black;
+}
+
+.review_ImgCon::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--pseudo-backgroundcolor);
+    position: absolute;
+    top: -0.25rem;
+    right: -0.5rem;
+    border-radius: 50%;
 }
 
 .testimonials {
-    padding: 50px 0 100px 0;
+    padding: 50px 0 20px 0;
 }
 
 .bottom-div {
