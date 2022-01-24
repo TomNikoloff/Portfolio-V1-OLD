@@ -202,7 +202,7 @@ body {
 .link-default:hover {
     color: var(--pseudo-color);
 }
-
+/*
 .link-blue:hover {
     color: #5271ff;
 }
@@ -218,13 +218,13 @@ body {
 .link-yellow:hover {
     color: #ffde59;
 }
-
+*/
 .arrow-down{
     text-decoration: none;
 }
 
 .arrow-down:hover{
-    color: #8c52ff;
+    color: var(--pseudo-color);
 }
 
 .arrow {
