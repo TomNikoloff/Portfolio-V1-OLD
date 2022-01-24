@@ -18,6 +18,10 @@ body {
     font-family: "europa", sans-serif;
   }
 
+:root{
+    --pseudo-color: #8c52ff;
+    }
+
 .animated-icon1 {
     width: 30px;
     height: 20px;
@@ -196,7 +200,7 @@ body {
 }
 
 .link-default:hover {
-    color: #8c52ff;
+    color: var(--pseudo-color);
 }
 
 .link-blue:hover {
@@ -448,15 +452,15 @@ body {
 }
 
 .textColor_Change {
-    color: #8c52ff;
+    color: var(--pseudo-color);
 }
 
 .borderColor_Change {
-    border-top: #8c52ff solid 5px;
+    border-top: var(--pseudo-color) solid 5px;
 }
 
 .borderLinkColor_Change {
-    border:#8c52ff 3px solid;
+    border: var(--pseudo-color) 3px solid;
 }
 
 .review_ImgCon {
@@ -477,10 +481,6 @@ body {
     position: relative;
 }
 
-:root{
-    --pseudo-backgroundcolor: #8c52ff;
-    }
-
 .review_ImgCon::after {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
@@ -494,7 +494,7 @@ body {
     place-items: center;
     border-radius: 50%;
     transform: translateY(25%);
-    background: var(--pseudo-backgroundcolor);
+    background: var(--pseudo-color);
     color: black;
 }
 
@@ -502,7 +502,7 @@ body {
     content: "";
     width: 100%;
     height: 100%;
-    background: var(--pseudo-backgroundcolor);
+    background: var(--pseudo-color);
     position: absolute;
     top: -0.25rem;
     right: -0.5rem;

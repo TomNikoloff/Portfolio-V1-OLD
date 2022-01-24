@@ -9,14 +9,18 @@ $(document).ready(function () {
 
 //Colour Change Start
 
+/* Obsolete Code. Replaced by CSS Var
 let buttonColor_Change = document.getElementsByTagName('button');
 let textColor_Change = document.getElementsByClassName('textColor_Change');
 let borderColor_Change = document.getElementsByClassName('borderColor_Change');
 let borderLinkColor_Change = document.getElementsByClassName('borderLinkColor_Change');
 let linkColor_Change = document.getElementsByTagName('a');
+*/
+
 const root = document.querySelector(":root");
 
 function changeToDefault() {
+  /* Obsolete Code
   for (i = 0; i < buttonColor_Change.length; i++) {
     buttonColor_Change[i].classList.remove("link-blue", "link-red", "link-green", "link-yellow");
     buttonColor_Change[i].classList.add("link-default");
@@ -30,6 +34,11 @@ function changeToDefault() {
   for (i=0; i < borderLinkColor_Change.length; i++) {
     borderLinkColor_Change[i].style.borderColor = "#8c52ff";
   }
+    for (i = 0; i < linkColor_Change.length; i++) {
+    linkColor_Change[i].classList.remove("link-blue", "link-red", "link-green", "link-yellow");
+    linkColor_Change[i].classList.add("link-default");
+  }
+  */
   let logo_Img = document.getElementById('logo_Img');
   logo_Img.src = "img/designs/logo.png";
 
@@ -39,15 +48,11 @@ function changeToDefault() {
   let workspace_Img = document.getElementById('workspace_Img');
   workspace_Img.src = "img/designs/workspace1.png";
 
-  for (i = 0; i < linkColor_Change.length; i++) {
-    linkColor_Change[i].classList.remove("link-blue", "link-red", "link-green", "link-yellow");
-    linkColor_Change[i].classList.add("link-default");
-  }
-
-  root.style.setProperty("--pseudo-backgroundcolor", '#8c52ff');
+  root.style.setProperty("--pseudo-color", '#8c52ff');
 }
 
 function changeToBlue() {
+  /* Obsolete Code
   for (i = 0; i < buttonColor_Change.length; i++) {
     buttonColor_Change[i].classList.remove("link-default","link-red", "link-green", "link-yellow");
     buttonColor_Change[i].classList.add("link-blue");
@@ -61,24 +66,25 @@ function changeToBlue() {
   for (i=0; i < borderLinkColor_Change.length; i++) {
     borderLinkColor_Change[i].style.borderColor = "#5271ff";
   }
+    for (i = 0; i < linkColor_Change.length; i++) {
+    linkColor_Change[i].classList.remove("link-default","link-red", "link-green", "link-yellow");
+    linkColor_Change[i].classList.add("link-blue");
+  }
+  */
   let logo_Img = document.getElementById('logo_Img');
   logo_Img.src = "img/designs/logo4.png";
   
   let contact_Img = document.getElementById('contact_Img');
   contact_Img.src = "img/designs/logo4.png";
-
+  
   let workspace_Img = document.getElementById('workspace_Img');
   workspace_Img.src = "img/designs/workspace4.png";
 
-  for (i = 0; i < linkColor_Change.length; i++) {
-    linkColor_Change[i].classList.remove("link-default","link-red", "link-green", "link-yellow");
-    linkColor_Change[i].classList.add("link-blue");
-  }
-  
-  root.style.setProperty("--pseudo-backgroundcolor", '#5271ff');
+  root.style.setProperty("--pseudo-color", '#5271ff');
 }
 
 function changeToRed() {
+  /* Obsolete Code
   for (i = 0; i < buttonColor_Change.length; i++) {
     buttonColor_Change[i].classList.remove("link-default","link-blue", "link-green", "link-yellow");
     buttonColor_Change[i].classList.add("link-red");
@@ -92,6 +98,11 @@ function changeToRed() {
   for (i=0; i < borderLinkColor_Change.length; i++) {
     borderLinkColor_Change[i].style.borderColor = "#ff5757";
   }
+    for (i = 0; i < linkColor_Change.length; i++) {
+    linkColor_Change[i].classList.remove("link-default","link-blue", "link-green", "link-yellow");
+    linkColor_Change[i].classList.add("link-red");
+  }
+  */ 
   let logo_Img = document.getElementById('logo_Img');
   logo_Img.src = "img/designs/logo2.png";
 
@@ -101,15 +112,11 @@ function changeToRed() {
   let workspace_Img = document.getElementById('workspace_Img');
   workspace_Img.src = "img/designs/workspace2.png";
 
-  for (i = 0; i < linkColor_Change.length; i++) {
-    linkColor_Change[i].classList.remove("link-default","link-blue", "link-green", "link-yellow");
-    linkColor_Change[i].classList.add("link-red");
-  }
-
-  root.style.setProperty("--pseudo-backgroundcolor", '#ff5757');
+  root.style.setProperty("--pseudo-color", '#ff5757');
 }
 
 function changeToGreen() {
+  /* Obsolete Code
   for (i = 0; i < buttonColor_Change.length; i++) {
     buttonColor_Change[i].classList.remove("link-default","link-red", "link-blue", "link-yellow");
     buttonColor_Change[i].classList.add("link-green");
@@ -123,6 +130,11 @@ function changeToGreen() {
   for (i=0; i < borderLinkColor_Change.length; i++) {
     borderLinkColor_Change[i].style.borderColor = "#7ed957";
   }
+    for (i = 0; i < linkColor_Change.length; i++) {
+    linkColor_Change[i].classList.remove("link-default","link-red", "link-blue", "link-yellow");
+    linkColor_Change[i].classList.add("link-green");
+  }
+  */
   let logo_Img = document.getElementById('logo_Img');
   logo_Img.src = "img/designs/logo3.png";
 
@@ -132,15 +144,11 @@ function changeToGreen() {
   let workspace_Img = document.getElementById('workspace_Img');
   workspace_Img.src = "img/designs/workspace3.png";
 
-  for (i = 0; i < linkColor_Change.length; i++) {
-    linkColor_Change[i].classList.remove("link-default","link-red", "link-blue", "link-yellow");
-    linkColor_Change[i].classList.add("link-green");
-  }
-
-  root.style.setProperty("--pseudo-backgroundcolor", '#7ed957');
+  root.style.setProperty("--pseudo-color", '#7ed957');
 }
 
 function changeToYellow() {
+  /* Obsolete Code
   for (i = 0; i < buttonColor_Change.length; i++) {
     buttonColor_Change[i].classList.remove("link-default","link-red", "link-green", "link-blue");
     buttonColor_Change[i].classList.add("link-yellow");
@@ -154,6 +162,11 @@ function changeToYellow() {
   for (i=0; i < borderLinkColor_Change.length; i++) {
     borderLinkColor_Change[i].style.borderColor = "#ffde59";
   }
+    for (i = 0; i < linkColor_Change.length; i++) {
+    linkColor_Change[i].classList.remove("link-default","link-red", "link-green", "link-blue");
+    linkColor_Change[i].classList.add("link-yellow");
+  }
+  */
   let logo_Img = document.getElementById('logo_Img');
   logo_Img.src = "img/designs/logo5.png";
 
@@ -163,12 +176,7 @@ function changeToYellow() {
   let workspace_Img = document.getElementById('workspace_Img');
   workspace_Img.src = "img/designs/workspace5.png";
 
-  for (i = 0; i < linkColor_Change.length; i++) {
-    linkColor_Change[i].classList.remove("link-default","link-red", "link-green", "link-blue");
-    linkColor_Change[i].classList.add("link-yellow");
-  }
-
-  root.style.setProperty("--pseudo-backgroundcolor", '#ffde59');
+  root.style.setProperty("--pseudo-color", '#ffde59');
 }
 
 //Colour Change End
