@@ -202,23 +202,7 @@ body {
 .link-default:hover {
     color: var(--pseudo-color);
 }
-/*
-.link-blue:hover {
-    color: #5271ff;
-}
 
-.link-red:hover {
-    color: #ff5757;
-}
-
-.link-green:hover {
-    color: #7ed957;
-}
-
-.link-yellow:hover {
-    color: #ffde59;
-}
-*/
 .arrow-down{
     text-decoration: none;
 }
@@ -762,7 +746,7 @@ body {
 .subIntro_tdl {
     border: 2px #252934 solid;
     border-radius: 5px;
-    background-color: #8c52ff;
+    background-color: var(--pseudo-color);
     padding: 5px;
     color: #fff;
 }
@@ -790,7 +774,7 @@ body {
     list-style-type: none;
     border: 2px #252934 solid;
     border-radius: 5px;
-    background-color: #8c52ff;
+    background-color: var(--pseudo-color);
     padding: 10px;
     color: #fff;
     margin-bottom: 10px;

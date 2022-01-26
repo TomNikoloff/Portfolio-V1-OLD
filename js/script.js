@@ -9,36 +9,16 @@ $(document).ready(function () {
 
 //Colour Change Start
 
-/* Obsolete Code. Replaced by CSS Var
-let buttonColor_Change = document.getElementsByTagName('button');
-let textColor_Change = document.getElementsByClassName('textColor_Change');
-let borderColor_Change = document.getElementsByClassName('borderColor_Change');
-let borderLinkColor_Change = document.getElementsByClassName('borderLinkColor_Change');
-let linkColor_Change = document.getElementsByTagName('a');
-*/
+const defaultBtn = document.querySelector('#default_Btn').addEventListener('click', changeToDefault);
+const blueBtn = document.querySelector('#blue_Btn').addEventListener('click', changeToBlue);
+const redBtn = document.querySelector('#red_Btn').addEventListener('click', changeToRed);
+const greenBtn = document.querySelector('#green_Btn').addEventListener('click', changeToGreen);
+const yellowBtn = document.querySelector('#yellow_Btn').addEventListener('click', changeToYellow);
 
 const root = document.querySelector(":root");
 
 function changeToDefault() {
-  /* Obsolete Code
-  for (i = 0; i < buttonColor_Change.length; i++) {
-    buttonColor_Change[i].classList.remove("link-blue", "link-red", "link-green", "link-yellow");
-    buttonColor_Change[i].classList.add("link-default");
-  }
-  for (i = 0; i < textColor_Change.length; i++) {
-    textColor_Change[i].style.color = "#8c52ff";
-  }
-  for (i = 0; i < borderColor_Change.length; i++) {
-    borderColor_Change[i].style.borderColor = "#8c52ff";
-  }
-  for (i=0; i < borderLinkColor_Change.length; i++) {
-    borderLinkColor_Change[i].style.borderColor = "#8c52ff";
-  }
-    for (i = 0; i < linkColor_Change.length; i++) {
-    linkColor_Change[i].classList.remove("link-blue", "link-red", "link-green", "link-yellow");
-    linkColor_Change[i].classList.add("link-default");
-  }
-  */
+
   let logo_Img = document.getElementById('logo_Img');
   logo_Img.src = "img/designs/logo.png";
 
@@ -52,25 +32,7 @@ function changeToDefault() {
 }
 
 function changeToBlue() {
-  /* Obsolete Code
-  for (i = 0; i < buttonColor_Change.length; i++) {
-    buttonColor_Change[i].classList.remove("link-default","link-red", "link-green", "link-yellow");
-    buttonColor_Change[i].classList.add("link-blue");
-  }
-  for (i = 0; i < textColor_Change.length; i++) {
-    textColor_Change[i].style.color = "#5271ff";
-  }
-  for (i = 0; i < borderColor_Change.length; i++) {
-    borderColor_Change[i].style.borderColor = "#5271ff";
-  }
-  for (i=0; i < borderLinkColor_Change.length; i++) {
-    borderLinkColor_Change[i].style.borderColor = "#5271ff";
-  }
-    for (i = 0; i < linkColor_Change.length; i++) {
-    linkColor_Change[i].classList.remove("link-default","link-red", "link-green", "link-yellow");
-    linkColor_Change[i].classList.add("link-blue");
-  }
-  */
+
   let logo_Img = document.getElementById('logo_Img');
   logo_Img.src = "img/designs/logo4.png";
   
@@ -84,25 +46,7 @@ function changeToBlue() {
 }
 
 function changeToRed() {
-  /* Obsolete Code
-  for (i = 0; i < buttonColor_Change.length; i++) {
-    buttonColor_Change[i].classList.remove("link-default","link-blue", "link-green", "link-yellow");
-    buttonColor_Change[i].classList.add("link-red");
-  }
-  for (i = 0; i < textColor_Change.length; i++) {
-    textColor_Change[i].style.color = "#ff5757";
-  }
-  for (i = 0; i < borderColor_Change.length; i++) {
-    borderColor_Change[i].style.borderColor = "#ff5757";
-  }
-  for (i=0; i < borderLinkColor_Change.length; i++) {
-    borderLinkColor_Change[i].style.borderColor = "#ff5757";
-  }
-    for (i = 0; i < linkColor_Change.length; i++) {
-    linkColor_Change[i].classList.remove("link-default","link-blue", "link-green", "link-yellow");
-    linkColor_Change[i].classList.add("link-red");
-  }
-  */ 
+
   let logo_Img = document.getElementById('logo_Img');
   logo_Img.src = "img/designs/logo2.png";
 
@@ -116,25 +60,7 @@ function changeToRed() {
 }
 
 function changeToGreen() {
-  /* Obsolete Code
-  for (i = 0; i < buttonColor_Change.length; i++) {
-    buttonColor_Change[i].classList.remove("link-default","link-red", "link-blue", "link-yellow");
-    buttonColor_Change[i].classList.add("link-green");
-  }
-  for (i = 0; i < textColor_Change.length; i++) {
-    textColor_Change[i].style.color = "#7ed957";
-  }
-  for (i = 0; i < borderColor_Change.length; i++) {
-    borderColor_Change[i].style.borderColor = "#7ed957";
-  }
-  for (i=0; i < borderLinkColor_Change.length; i++) {
-    borderLinkColor_Change[i].style.borderColor = "#7ed957";
-  }
-    for (i = 0; i < linkColor_Change.length; i++) {
-    linkColor_Change[i].classList.remove("link-default","link-red", "link-blue", "link-yellow");
-    linkColor_Change[i].classList.add("link-green");
-  }
-  */
+
   let logo_Img = document.getElementById('logo_Img');
   logo_Img.src = "img/designs/logo3.png";
 
@@ -148,25 +74,7 @@ function changeToGreen() {
 }
 
 function changeToYellow() {
-  /* Obsolete Code
-  for (i = 0; i < buttonColor_Change.length; i++) {
-    buttonColor_Change[i].classList.remove("link-default","link-red", "link-green", "link-blue");
-    buttonColor_Change[i].classList.add("link-yellow");
-  }
-  for (i = 0; i < textColor_Change.length; i++) {
-    textColor_Change[i].style.color = "#ffde59";
-  }
-  for (i = 0; i < borderColor_Change.length; i++) {
-    borderColor_Change[i].style.borderColor = "#ffde59";
-  }
-  for (i=0; i < borderLinkColor_Change.length; i++) {
-    borderLinkColor_Change[i].style.borderColor = "#ffde59";
-  }
-    for (i = 0; i < linkColor_Change.length; i++) {
-    linkColor_Change[i].classList.remove("link-default","link-red", "link-green", "link-blue");
-    linkColor_Change[i].classList.add("link-yellow");
-  }
-  */
+
   let logo_Img = document.getElementById('logo_Img');
   logo_Img.src = "img/designs/logo5.png";
 
