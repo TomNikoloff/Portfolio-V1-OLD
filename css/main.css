@@ -22,6 +22,8 @@ body {
     --pseudo-color: #8c52ff;
     }
 
+/*Animations On Scroll Start*/
+
 .js-scroll {
     opacity: 0;
     transition: opacity 500ms;
@@ -81,6 +83,9 @@ body {
     opacity: 1;
   }
 }
+/*Animations On Scroll End*/
+
+/*Hamburger Menu Start*/
 
 .animated-icon1 {
     width: 30px;
@@ -160,6 +165,8 @@ body {
     box-shadow: none;
 }
 
+/*Hamburger Menu End*/
+
 .btn_Style {
     border: #252934 solid 3px;
     border-radius: 15px;
@@ -193,7 +200,8 @@ body {
     display: inline;
 }
 
-/*Temp display = none on small screens until color chnage menu is fixed on smaller screens.*/
+/*Temp display = none on small screens until color change menu is fixed on smaller screens.*/
+
 .verticalContainer {
     display: none;
     position: absolute;
