@@ -9,83 +9,28 @@ $(document).ready(function () {
 
 //Colour Change Start
 
-const defaultBtn = document.querySelector('#default_Btn').addEventListener('click', changeToDefault);
-const blueBtn = document.querySelector('#blue_Btn').addEventListener('click', changeToBlue);
-const redBtn = document.querySelector('#red_Btn').addEventListener('click', changeToRed);
-const greenBtn = document.querySelector('#green_Btn').addEventListener('click', changeToGreen);
-const yellowBtn = document.querySelector('#yellow_Btn').addEventListener('click', changeToYellow);
-
 const root = document.querySelector(":root");
 
-function changeToDefault() {
+const colorChangeObject = {
+  'default': {'color': '#8c52ff', 'logo': 'img/designs/logo.png', 'workspace' : 'img/designs/workspace1.png'},
+  'blue': {'color': '#5271ff', 'logo': 'img/designs/logo4.png', 'workspace' : 'img/designs/workspace4.png'},
+  'red': {'color': '#ff5757', 'logo': 'img/designs/logo2.png', 'workspace' : 'img/designs/workspace2.png'},
+  'green': {'color': '#7ed957', 'logo': 'img/designs/logo3.png', 'workspace' : 'img/designs/workspace3.png'},
+  'yellow': {'color': '#ffde59', 'logo': 'img/designs/logo5.png', 'workspace' : 'img/designs/workspace5.png'},
+};
 
+function colorChange(color) {
   let logo_Img = document.getElementById('logo_Img');
-  logo_Img.src = "img/designs/logo.png";
+  logo_Img.src = colorChangeObject[color]['logo'];
 
   let contact_Img = document.getElementById('contact_Img');
-  contact_Img.src = "img/designs/logo.png";
+  contact_Img.src = colorChangeObject[color]['logo'];
 
   let workspace_Img = document.getElementById('workspace_Img');
-  workspace_Img.src = "img/designs/workspace1.png";
+  workspace_Img.src = colorChangeObject[color]['workspace'];
 
-  root.style.setProperty("--pseudo-color", '#8c52ff');
-}
-
-function changeToBlue() {
-
-  let logo_Img = document.getElementById('logo_Img');
-  logo_Img.src = "img/designs/logo4.png";
-  
-  let contact_Img = document.getElementById('contact_Img');
-  contact_Img.src = "img/designs/logo4.png";
-  
-  let workspace_Img = document.getElementById('workspace_Img');
-  workspace_Img.src = "img/designs/workspace4.png";
-
-  root.style.setProperty("--pseudo-color", '#5271ff');
-}
-
-function changeToRed() {
-
-  let logo_Img = document.getElementById('logo_Img');
-  logo_Img.src = "img/designs/logo2.png";
-
-  let contact_Img = document.getElementById('contact_Img');
-  contact_Img.src = "img/designs/logo2.png";
-
-  let workspace_Img = document.getElementById('workspace_Img');
-  workspace_Img.src = "img/designs/workspace2.png";
-
-  root.style.setProperty("--pseudo-color", '#ff5757');
-}
-
-function changeToGreen() {
-
-  let logo_Img = document.getElementById('logo_Img');
-  logo_Img.src = "img/designs/logo3.png";
-
-  let contact_Img = document.getElementById('contact_Img');
-  contact_Img.src = "img/designs/logo3.png";
-
-  let workspace_Img = document.getElementById('workspace_Img');
-  workspace_Img.src = "img/designs/workspace3.png";
-
-  root.style.setProperty("--pseudo-color", '#7ed957');
-}
-
-function changeToYellow() {
-
-  let logo_Img = document.getElementById('logo_Img');
-  logo_Img.src = "img/designs/logo5.png";
-
-  let contact_Img = document.getElementById('contact_Img');
-  contact_Img.src = "img/designs/logo5.png";
-
-  let workspace_Img = document.getElementById('workspace_Img');
-  workspace_Img.src = "img/designs/workspace5.png";
-
-  root.style.setProperty("--pseudo-color", '#ffde59');
-}
+  root.style.setProperty("--pseudo-color", colorChangeObject[color]['color']);
+};
 
 //Colour Change End
 
