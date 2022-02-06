@@ -302,17 +302,6 @@ body {
     }
   }
 
-/*#intro {
-    opacity: 0.3;
-    transform: scale(0.1);
-    transition: all 1s ease-in-out;
-}
-
-.activeIntro {
-    opacity: 1;
-    transform: scale(1);
-}*/
-
 .skills-section{
     margin-top: -14rem;
     padding-bottom: 100px;
@@ -354,6 +343,8 @@ body {
     top: 0;
     left: 0;
 }
+
+/*Link Animations Start*/
 
 .link {
     cursor: pointer;
@@ -402,6 +393,8 @@ body {
 .link--anim:hover span {
     transform: translate3d(0, -2px, 0);
 }
+
+/*Link Animation End*/
 
 .rotate:hover
 {
