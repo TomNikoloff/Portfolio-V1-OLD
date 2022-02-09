@@ -42,11 +42,11 @@ function decideWinner(yourChoice, computerChoice) {
 
 function finalMessage([yourScore, computerScore]) {
     if (yourScore === 0) {
-        return {'message': 'You Lost!', 'color': '#8c52ff'};
+        return {'message': 'You Lost!'};
     } else if (yourScore === 0.5) {
-        return {'message': 'You tied!', 'color': '#8c52ff'};
+        return {'message': 'You tied!'};
     } else {
-        return {'message': 'You Won!', 'color': '#8c52ff'};
+        return {'message': 'You Won!'};
     }
 }
 
@@ -78,9 +78,20 @@ function rpsFrontEnd(humanImageChoice, botImageChoice, finalMessage) {
     messageDiv.appendChild(messageResultDiv);
     botDiv.appendChild(botChoiceDiv);
 
-    humanChoiceDiv.innerHTML = "<img style='width: 90%' src='" + imagesDatabase[humanImageChoice] + "'>";
-    botChoiceDiv.innerHTML = "<img style='width: 90%' src='" + imagesDatabase[botImageChoice] + "'>";
-    messageResultDiv.innerHTML = "<h1 style='color: " + finalMessage['color'] + "; font-size: 60px; padding-top: 50%; '>" + finalMessage['message'] + "</h1>";
+    let humanChoiceImg = document.createElement('img');
+    humanChoiceImg.classList.add('rpsImg');
+    humanChoiceImg.src = imagesDatabase[humanImageChoice];
+    humanChoiceDiv.appendChild(humanChoiceImg);
+
+    let botChoiceImg = document.createElement('img');
+    botChoiceImg.classList.add('rpsImg');
+    botChoiceImg.src = imagesDatabase[botImageChoice];
+    botChoiceDiv.appendChild(botChoiceImg);
+
+    let messageResult= document.createElement('h1');
+    messageResult.classList.add('rpsMessage');
+    messageResult.appendChild(document.createTextNode(finalMessage['message']));
+    messageResultDiv.appendChild(messageResult);
 
     document.getElementById('resetButtonDiv').style.display = "inline";
 }

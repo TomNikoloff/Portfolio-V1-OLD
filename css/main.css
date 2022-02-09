@@ -638,6 +638,7 @@ body {
     .projects-section {
         margin-top: -8rem;
     }
+
 }
 
 @media (min-width: 768px) {
@@ -649,6 +650,9 @@ body {
     }
     .projects-section {
         margin-top: -10rem;
+    }
+    .rpsMessage {
+        font-size: 60px;
     }
 }
 
@@ -718,6 +722,12 @@ body {
 .rpsImgDiv:hover {
     opacity: 1;
     transition: .5s ease;
+}
+
+.rpsMessage {
+    font-size: 30px;
+    color: #8c52ff;
+    padding-top: 50%;
 }
 
 .resetButton {
