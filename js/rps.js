@@ -89,8 +89,8 @@ function rpsFrontEnd(humanImageChoice, botImageChoice, finalMessage) {
     botChoiceDiv.appendChild(botChoiceImg);
 
     let messageResult= document.createElement('h1');
-    messageResult.classList.add('rpsMessage');
     messageResult.appendChild(document.createTextNode(finalMessage['message']));
+    messageResult.classList.add('rpsMessage');
     messageResultDiv.appendChild(messageResult);
 
     document.getElementById('resetButtonDiv').style.display = "inline";
