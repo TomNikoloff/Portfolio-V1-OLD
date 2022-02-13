@@ -563,16 +563,14 @@ body {
 }
 
 .submit_Con {
-    width: 20%;
+    width: 180px;
     margin: 20px auto;
 }
 
 .contact_Link {
-    font-size: 20px;
     border: #252934 solid 3px;
     border-radius: 15px;
     padding: 10px;
-    width: 75%;
     transition: 0.5s ease;
 }
 
@@ -701,15 +699,6 @@ body {
 
 /*Expense Tracker Start*/
 
-.intro_Expense {
-    font-size: 4rem;
-}
-
-.subIntro_Expense {
-    font-size: 3rem;
-    color: #8c52ff;
-}
-
 .inputLable {
     font-size: 1.75rem;
 }
@@ -719,11 +708,10 @@ body {
 }
 
 .btn_Div {
-    font-size: 20px;
     border: #252934 solid 3px;
     border-radius: 15px;
     padding: 10px;
-    width: 20%;
+    width: 180px;
     transition: 0.5s ease;
     margin: 20px auto;
 }
@@ -911,6 +899,12 @@ td {
     .rpsMessage {
         font-size: 60px;
     }
+    .intro_Expense {
+        font-size: 4rem;
+    }
+    .subIntro_Expense {
+        font-size: 3rem;
+    }
 }
 
 @media (min-width: 992px) {
@@ -933,7 +927,7 @@ td {
         white-space: nowrap;
         overflow: hidden;
     }  
-    
+
     /* Typewriter Animation */
     .anim-typewriter{
         animation: typewriter 4s steps(44) 1s 1 normal both,
