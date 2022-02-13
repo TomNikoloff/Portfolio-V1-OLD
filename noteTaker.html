@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset ="utf-8">
-    <meta name ="description" content ="Thomas Nikoloff Expense Tracker">
+    <meta name ="description" content ="Thomas Nikoloff Portfolio">
     <meta name ="author" content ="Thomas Nikoloff">
     <meta name ="keywords" content="Thomas, Nikoloff">
     <meta name ="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,39 +24,32 @@
             </a>
         </div>
         <section>
-            <h1 class="text-center fourRem">Expense Tracker</h1>
-            <h2 class="text-center textColor_Change threeRem">Add A New Item:</h2>
-            <form>
-                <lable class="inputLable" for="name">Name:</lable>
-                <input class="inputName form-control p-4" type="text" id="name" name="name" placeholder="Where was the expense made?">
-                <div class="form-row">
-                    <div class="col-6">
-                        <lable class="inputLable" for="Date">Date:</lable>
-                        <input class="inputOther form-control p-4" type="date" id="date" name="date">
-                    </div>
-                    <div class="col-6">
-                        <lable class="inputLable" for="amount">Amount:</lable>
-                        <input class="inputOther form-control p-4" type="number" id="amount" name="amount" placeholder="How much was it?">
-                    </div>
-                </div>
-            </form>
-            <div class="btn_Div mx-auto text-center">
-                    <button class="btn link link--anim link-default" id="add_Item">Add Expense</button>
+            <h1 class="text-center fourRem">Note Taker</h1>
+            <h2 class="text-center textColor_Change threeRem">Add A New Note</h2>
+            <div class="noteInputCon">
+                <label id="noteInput-Label" for="noteInput">Note:
+                    <textarea class="form-control" id="noteInput" name="noteInput" rows="2">Write your note here....</textarea>
+                </label>
             </div>
+            <div class="btn_Div mx-auto text-center">
+                <button class="btn link link--anim link-default" id="add_Item">Add Note</button>
+            </div>
+            <div id="modal">
+                <div class="modalContent">
+                    <span class="close">&times;</span>
+                    <p id="modalText"></p>
+                </div>
+            </div> 
+          
         </section>
     </div>
     <div class="off_White vh100">
         <div class="container">
-            <table>
-                <tr>
-                    <th>Name</th>
-                    <th>Date</th>
-                    <th>Amount</th>
-                    <th>Delete</th>
-                </tr>
-            </table>
+            <div class="noteContainer">
+                <p id="placeholder">No notes added yet!</p>
+            </div>     
         </div>
     </div>    
-    <script src="js/expenseTracker.js"></script>
+    <script src="js/noteTaker.js"></script>
 </body>
 </html>
