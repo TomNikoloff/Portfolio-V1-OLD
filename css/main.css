@@ -595,7 +595,6 @@ body {
     background-color: #1e242c;
     border: 2px #616161 solid;
     border-radius: 4px;
-    color: #fff;
 }
 
 
@@ -623,6 +622,10 @@ body {
 
 .clear_Float {
     clear: right;
+}
+
+.delete {
+    display: none;
 }
 
 /* Rock, Paper, Scissors classes*/
@@ -696,6 +699,74 @@ body {
 }
 /*Blackjack End*/
 
+/*Expense Tracker Start*/
+
+.intro_Expense {
+    font-size: 4rem;
+}
+
+.subIntro_Expense {
+    font-size: 3rem;
+    color: #8c52ff;
+}
+
+.inputLable {
+    font-size: 1.75rem;
+}
+
+.inputName {
+    margin-bottom: 20px;
+}
+
+.btn_Div {
+    font-size: 20px;
+    border: #252934 solid 3px;
+    border-radius: 15px;
+    padding: 10px;
+    width: 20%;
+    transition: 0.5s ease;
+    margin: 20px auto;
+}
+
+.btn_Div:hover {
+    background-color: #252934;
+}
+
+table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 2px #1e242c solid;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #252934;
+    color: #717a88;
+}
+
+td {
+    background-color: #E6E8E9;
+}
+
+.dBtn {
+    display: block;
+    border: #1e242c 2px solid;
+    border-radius: 5px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.dBtn:hover {
+    background-color: #1e242c;
+    transition: 0.5s ease;
+    color: #8c52ff;
+}
+
+.vh100 {
+    height: 100vh;
+}
 /*To-Do List Start*/
 
 #user_Input {
@@ -767,17 +838,11 @@ body {
     color: #fff;
     margin-bottom: 10px;
 }
-
-.delete {
-    display: none;
-}
 /*To-Do List End*/
 
 .hex_Div {
     margin: 20vh 0;
 }
-
-
 
 .test-sub {
     color: #252934 !important;
