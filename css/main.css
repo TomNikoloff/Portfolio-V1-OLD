@@ -847,6 +847,15 @@ td {
 
 /*Note Taker End*/
 
+/*Vowel Counter Start*/
+
+#checkBtn:hover {
+    color: var(--pseudo-color);
+}
+
+
+/*Vowel Counter End*/
+
 /*To-Do List Start*/
 
 #user_Input {
