@@ -628,7 +628,95 @@ body {
 
 /* Memory Game Classes Start */
 
+
+.cardCover {
+    height: 200px;
+    background-color: #252934;
+    border-radius: 10px;
+}
+
+.card {
+    z-index: -1;
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    border: #252934 5px solid;
+    background-color: #252934;
+}
+
+.matched {
+    border: #8c52ff 5px solid !important;
+    animation-name: rubberBand;
+    animation-duration: 0.75s;
+}
+
+.unmatched {
+    animation-name: pulse;
+    animation-duration: 0.75s;
+    border: #ff5757 5px solid !important;
+}
+
+.open{
+    background-color: transparent !important;
+}
+
+.disableClick {
+    pointer-events: none;
+}
+
+#genBtn:hover {
+    color: var(--pseudo-color);
+}
+
 /* Memory Game Classes End */
+
+/*Game Animations Start*/
+
+@keyframes pulse {
+    from {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    50% {
+      transform: scale3d(1.2, 1.2, 1.2);
+    }
+  
+    to {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+
+@keyframes rubberBand {
+    from {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+  
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+  
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+  
+    65% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+  
+    75% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
+  
+    to {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+/*Game Animations End*/
 
 /* Rock, Paper, Scissors classes */
 
