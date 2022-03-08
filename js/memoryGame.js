@@ -10,7 +10,7 @@ let result = document.querySelector('#memGame-Result');
 const imgItems = [
     {src: "img/memGame/lolaOne.jpg"},
     {src: "img/memGame/lolaTwo.jpg"},
-    {src: "img/memGame/lolaTHree.jpg"},
+    {src: "img/memGame/lolaThree.jpg"},
     {src: "img/memGame/lolaFour.jpg"},
     {src: "img/memGame/lolaFive.jpg"},
     {src: "img/memGame/lolaSix.jpg"},
