@@ -80,6 +80,7 @@ function reset() {
 for (let i = 0; i < cardCover.length; i++) {
    cardCover[i].addEventListener('click', displayCard);
    cardCover[i].addEventListener('click', checkPair);
+   cardCover[i].addEventListener('click', congrats);
 };
 
 function displayCard() {
@@ -166,3 +167,38 @@ function startTimer() {
     }, 1000);
 }
 
+let modal = document.getElementById('modal');
+let close = document.querySelector('.close');
+let matches = document.getElementsByClassName('matched');
+let playAgain = document.getElementById('playAgain');
+let movesElement =  document.getElementById('moves');
+let timeElement = document.getElementById('time');
+
+function congrats() {
+        if (matches.length == 24) {
+            clearInterval(interval);
+            let finalTime = timer.textContent;
+    
+            modal.style.display = "block";
+            movesElement.textContent = "You did it in " + moves + ".";
+            timeElement.textContent = "It took you " + finalTime;
+    
+            close.addEventListener('click', closeModal);
+            playAgain.addEventListener('click', restart);
+        }
+}
+
+function closeModal() {
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+} 
+
+function restart() {
+    closeModal();
+    reset();
+}

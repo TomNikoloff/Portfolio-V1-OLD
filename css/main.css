@@ -628,6 +628,7 @@ body {
 
 /* Memory Game Classes Start */
 
+/*Congrats Modal uses the same classes as note taker*/
 
 .cardCover {
     height: 160px;
@@ -666,6 +667,10 @@ body {
 }
 
 #genBtn:hover {
+    color: var(--pseudo-color);
+}
+
+#playAgain:hover {
     color: var(--pseudo-color);
 }
 
@@ -928,7 +933,7 @@ td {
 /*Modal Close*/
 .close {
     font-weight: bold;
-    color: #8c52ff;
+    color: var(--pseudo-color);
     font-size: 40px;
 }
 
